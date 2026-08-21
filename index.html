@@ -1,245 +1,222 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<meta name="description" content="RN Production — professional photography, films and creative post-production in Barcelona." />
-<title>RN Production | Films & Photography Barcelona</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Book & Pay | RN Production</title>
 <style>
-:root{--bg:#f3eee7;--paper:#fffdf9;--ink:#141414;--muted:#716b64;--accent:#c96f3d;--dark:#141414;--line:rgba(20,20,20,.11)}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.6}a{color:inherit;text-decoration:none}.container{width:min(1180px,calc(100% - 34px));margin:auto}.header{position:fixed;inset:0 0 auto;z-index:20;background:rgba(243,238,231,.9);backdrop-filter:blur(16px);border-bottom:1px solid var(--line)}.nav{height:82px;display:flex;align-items:center;gap:24px}.brand{display:flex;align-items:center;gap:12px}.mark{width:45px;height:45px;border-radius:50%;display:grid;place-items:center;background:#111;color:#fff;font-weight:800}.brand strong{display:block;font-size:17px}.brand small{display:block;color:var(--muted);font-size:11px;letter-spacing:.08em;text-transform:uppercase}.links{display:flex;gap:25px;margin-left:auto;font-size:14px;font-weight:700}.links a:hover{color:var(--accent)}.actions{display:flex;gap:10px;align-items:center}.langs{display:flex;background:#fff;border:1px solid var(--line);border-radius:999px;padding:3px}.lang{border:0;background:transparent;padding:6px 8px;border-radius:999px;cursor:pointer;font-weight:700;font-size:11px}.lang.active{background:#111;color:#fff}.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--accent);color:#fff;padding:13px 19px;border-radius:999px;font-weight:800;border:0;cursor:pointer}.menu{display:none;border:0;background:none;font-size:24px}.hero{min-height:790px;display:flex;align-items:center;position:relative;color:#fff;background:url('couple1.jpg') center/cover no-repeat}.hero:before{content:'';position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,10,10,.84),rgba(10,10,10,.52) 55%,rgba(10,10,10,.25))}.hero .inner{position:relative;padding-top:90px}.eyebrow,.kicker{text-transform:uppercase;letter-spacing:.14em;font-size:12px;font-weight:800;color:#efb798}.hero h1,.section h2,.about h2,.contact h2{font-family:Georgia,'Times New Roman',serif;letter-spacing:-.03em}.hero h1{font-size:clamp(52px,7vw,88px);line-height:.98;max-width:820px;margin:16px 0 22px}.hero p{max-width:650px;font-size:19px;color:rgba(255,255,255,.82)}.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.ghost{background:transparent;border:1px solid rgba(255,255,255,.5)}.pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:30px}.pills span{font-size:12px;padding:8px 11px;border:1px solid rgba(255,255,255,.24);border-radius:999px;background:rgba(0,0,0,.15)}.strip{background:var(--paper);border-bottom:1px solid var(--line);padding:30px 0}.stats{display:grid;grid-template-columns:repeat(4,1fr)}.stats div{padding:8px 24px;border-right:1px solid var(--line)}.stats div:last-child{border:0}.stats strong{display:block;font-family:Georgia,serif;font-size:21px}.stats span{font-size:12px;color:var(--muted)}.section{padding:95px 0}.heading{display:grid;grid-template-columns:1.2fr .8fr;gap:35px;align-items:end;margin-bottom:42px}.heading h2,.about h2,.contact h2{font-size:clamp(38px,5vw,58px);line-height:1.03;margin:10px 0 0}.heading p{margin:0;color:var(--muted);font-size:17px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--paper);border:1px solid var(--line);border-radius:24px;padding:18px;box-shadow:0 18px 50px rgba(0,0,0,.07);overflow:hidden}.card-media{position:relative;height:220px;border-radius:18px;overflow:hidden;margin-bottom:18px;background:#ddd}.card-media img{width:100%;height:100%;object-fit:cover;display:block;transition:.4s}.card:hover .card-media img{transform:scale(1.04)}.num{width:50px;height:50px;border-radius:50%;display:grid;place-items:center;background:#efe2d8;color:#9e4d28;font-weight:800;position:absolute;left:14px;top:14px;z-index:2;box-shadow:0 8px 20px rgba(0,0,0,.14)}.card h3{font-size:23px;margin:10px 0 10px;padding:0 10px}.card p{color:var(--muted);padding:0 10px}.tag{font-size:11px;font-weight:800;text-transform:uppercase;letter-spacing:.08em;display:block;padding:0 10px 10px}.dark{background:#151515;color:#fff}.dark .heading p{color:rgba(255,255,255,.58)}.portfolio{display:grid;grid-template-columns:1.2fr 1fr 1fr;grid-auto-rows:280px;gap:15px}.photo{margin:0;position:relative;border-radius:20px;overflow:hidden;background:#222}.photo.tall{grid-row:span 2}.photo.wide{grid-column:span 2}.photo img{width:100%;height:100%;object-fit:cover;display:block;transition:.45s}.photo:hover img{transform:scale(1.04)}.photo:after{content:'';position:absolute;inset:45% 0 0;background:linear-gradient(transparent,rgba(0,0,0,.8))}.photo figcaption{position:absolute;z-index:2;left:18px;bottom:16px;font-weight:800;font-size:17px}.locations{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.loc{background:var(--paper);border:1px solid var(--line);border-radius:20px;padding:23px;min-height:230px;display:flex;flex-direction:column}.loc span{font-size:11px;color:var(--accent);font-weight:800}.loc h3{font-family:Georgia,serif;font-size:25px;margin:auto 0 8px}.loc p{font-size:14px;color:var(--muted);margin:0}.about{background:#e6ddd3;padding:95px 0}.about-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:65px;align-items:center}.visual{min-height:540px;border-radius:30px;position:relative;overflow:hidden;background:url('quince2.jpg') center/cover}.visual-card{position:absolute;left:22px;right:22px;bottom:22px;padding:22px;border-radius:18px;background:rgba(255,253,249,.92);backdrop-filter:blur(12px)}.visual-card h3{font-family:Georgia,serif;font-size:30px;margin:8px 0}.visual-card p{margin:0;color:var(--muted)}.about-copy p{color:#5e5953;font-size:17px}.checks{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:25px}.checks div{background:rgba(255,255,255,.45);padding:13px;border-radius:13px;font-weight:700;font-size:14px}.contact{background:var(--paper);padding:95px 0}.contact-grid{display:grid;grid-template-columns:1fr .8fr;gap:65px}.contact p{color:var(--muted);font-size:17px}.contact-links{margin-top:30px}.contact-links a{display:flex;justify-content:space-between;gap:16px;padding:15px 0;border-bottom:1px solid var(--line)}.contact-links span{color:var(--muted);font-size:13px}.booking{background:var(--bg);border:1px solid var(--line);border-radius:22px;padding:26px;box-shadow:0 18px 50px rgba(0,0,0,.07)}.booking h3{font-family:Georgia,serif;font-size:29px;margin:0 0 18px}.booking label{display:block;margin-bottom:12px;font-size:12px;font-weight:800}.booking input,.booking select,.booking textarea{width:100%;margin-top:6px;padding:12px;border-radius:11px;border:1px solid var(--line);background:#fff}.full{width:100%;border-radius:12px}.booking small{display:block;text-align:center;color:var(--muted);margin-top:9px}footer{background:#101010;color:#fff;padding:65px 0 20px}.footer-grid{display:grid;grid-template-columns:1.4fr .6fr .6fr;gap:40px}.footer-grid p{color:rgba(255,255,255,.55);max-width:380px}.footer-list{display:grid;gap:9px;align-content:start;color:rgba(255,255,255,.7);font-size:14px}.bottom{margin-top:45px;padding-top:18px;border-top:1px solid rgba(255,255,255,.12);display:flex;justify-content:space-between;color:rgba(255,255,255,.4);font-size:12px}.wa{position:fixed;right:20px;bottom:20px;width:56px;height:56px;border-radius:50%;background:#1db954;color:#fff;display:grid;place-items:center;font-weight:900;z-index:15;box-shadow:0 10px 25px rgba(0,0,0,.22)}@media(max-width:980px){.links{display:none;position:absolute;top:82px;left:16px;right:16px;flex-direction:column;background:#fff;padding:18px;border-radius:16px;box-shadow:0 16px 40px rgba(0,0,0,.1)}.links.open{display:flex}.menu{display:block}.actions>.btn{display:none}.cards{grid-template-columns:1fr}.locations{grid-template-columns:1fr 1fr}.heading,.about-grid,.contact-grid{grid-template-columns:1fr}.portfolio{grid-template-columns:1fr 1fr}.photo.tall{grid-row:auto}.photo.wide{grid-column:span 2}.stats{grid-template-columns:1fr 1fr}.stats div:nth-child(2){border-right:0}.about-grid{gap:35px}.footer-grid{grid-template-columns:1fr 1fr}}@media(max-width:640px){.brand small{display:none}.hero{min-height:710px}.hero h1{font-size:48px}.section,.about,.contact{padding:70px 0}.portfolio{grid-template-columns:1fr}.photo.wide{grid-column:auto}.locations{grid-template-columns:1fr}.checks{grid-template-columns:1fr}.footer-grid{grid-template-columns:1fr}.bottom{flex-direction:column;gap:5px}}
+:root{--bg:#f3eee7;--paper:#fffdf9;--ink:#151515;--muted:#726b63;--accent:#c96f3d;--accent2:#a64f25;--line:rgba(20,20,20,.12);--green:#176c45;--soft:#f8f4ef}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);font-family:Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.5}a{text-decoration:none;color:inherit}.wrap{width:min(1180px,calc(100% - 28px));margin:auto}.top{background:rgba(255,253,249,.96);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{display:flex;align-items:center;gap:12px}.mark{width:44px;height:44px;border-radius:50%;background:#111;color:#fff;display:grid;place-items:center;font-weight:800}.brand small{display:block;color:var(--muted);font-size:11px;letter-spacing:.05em}.right{display:flex;gap:10px;align-items:center}.langs{display:flex;background:#fff;border:1px solid var(--line);border-radius:999px;padding:3px}.lang{border:0;background:transparent;padding:6px 9px;border-radius:999px;cursor:pointer;font-weight:700}.lang.active{background:#111;color:#fff}.back{font-size:13px;font-weight:700}.hero{padding:52px 0 24px}.eyebrow{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}h1{font-family:Georgia,serif;font-size:clamp(42px,6vw,70px);line-height:1;margin:10px 0 14px}.hero p{max-width:800px;color:var(--muted);font-size:17px}.rulebox{margin-top:22px;background:#fff8f3;border:1px solid rgba(201,111,61,.28);border-left:4px solid var(--accent);padding:16px 18px;border-radius:14px}.rulebox strong{display:block;font-size:16px;margin-bottom:4px}.rulebox span{font-size:14px;color:#6e4630}.section-title{font-family:Georgia,serif;font-size:34px;margin:18px 0 18px}.prices{display:grid;grid-template-columns:repeat(5,1fr);gap:12px;margin-bottom:30px}.price-card{background:var(--paper);border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:0 10px 28px rgba(20,20,20,.05);cursor:pointer;transition:.2s}.price-card:hover,.price-card.active{transform:translateY(-2px);border-color:var(--accent);box-shadow:0 0 0 2px rgba(201,111,61,.10)}.price-card h3{margin:0 0 9px;font-size:17px}.price{font-size:27px;font-weight:900;color:var(--accent)}.price small{font-size:11px;color:var(--muted);font-weight:600}.duration{font-size:12px;color:var(--muted);margin:2px 0 12px}.details-list{font-size:12px;color:#5e5851;padding-left:17px;margin:0}.details-list li{margin:4px 0}.booking-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:24px;padding:12px 0 70px}.card{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:25px;box-shadow:0 14px 36px rgba(20,20,20,.06)}.card h2,.card h3{font-family:Georgia,serif;margin-top:0}.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}.field{margin-bottom:14px}.field label{display:block;font-size:12px;font-weight:800;margin-bottom:6px}.field input,.field select,.field textarea{width:100%;border:1px solid var(--line);border-radius:12px;background:#fff;padding:12px 13px;font:inherit}.plans{display:grid;gap:10px;margin:12px 0 22px}.plan{display:flex;gap:12px;align-items:flex-start;border:1px solid var(--line);border-radius:15px;padding:14px;background:#fff;cursor:pointer}.plan.active{border-color:var(--accent);box-shadow:0 0 0 2px rgba(201,111,61,.10)}.plan input{margin-top:3px}.plan strong{display:block}.plan small{display:block;color:var(--muted);margin-top:3px}.method-title{margin-top:24px}.pay-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:12px 0 18px}.method{border:1px solid var(--line);background:#fff;border-radius:14px;padding:14px 9px;text-align:center;cursor:pointer;font-weight:800}.method small{display:block;color:var(--muted);font-weight:400;margin-top:4px}.method.active{border-color:var(--accent);box-shadow:0 0 0 2px rgba(201,111,61,.13)}.method.disabled{opacity:.45;cursor:not-allowed}.methodbox{background:var(--soft);border-radius:14px;padding:15px;font-size:13px;color:var(--muted);margin-bottom:16px}.btn{border:0;background:var(--accent);color:#fff;border-radius:13px;padding:14px 18px;font-weight:800;cursor:pointer;width:100%;font-size:15px}.btn:hover{background:var(--accent2)}.wa{display:block;text-align:center;margin-top:12px;color:var(--accent);font-weight:800}.summary{display:grid;gap:12px}.sumrow{display:flex;justify-content:space-between;gap:20px;padding-bottom:12px;border-bottom:1px solid var(--line)}.sumrow span{color:var(--muted)}.sumrow strong{text-align:right}.due{background:#fdf3eb;border-radius:16px;padding:16px;margin-top:4px}.due .big{display:flex;justify-content:space-between;gap:12px;align-items:end}.due .big span{color:var(--muted);font-size:13px}.due .big strong{font-size:30px;color:var(--accent)}.remaining{display:flex;justify-content:space-between;gap:12px;margin-top:8px;font-size:13px}.remaining span{color:var(--muted)}.safe{display:flex;gap:9px;align-items:flex-start;background:#edf7f1;color:#245b3e;border-radius:14px;padding:14px;margin-top:14px}.small{font-size:12px;color:var(--muted)}.important{margin-top:18px;border-top:1px solid var(--line);padding-top:16px}.important strong{display:block;margin-bottom:6px}.important ul{margin:0;padding-left:18px;color:var(--muted);font-size:12px}.event-hours{display:none}.event-hours.show{display:block}.vat-note{display:flex;align-items:flex-start;gap:9px;background:#eef5ff;color:#244e75;border:1px solid rgba(36,78,117,.12);border-radius:14px;padding:13px 15px;margin:12px 0 20px;font-size:13px}.vat-note strong{display:block}.vat-note span{color:#52708b}.vat-mini{display:inline-block;margin-top:8px;font-size:11px;font-weight:800;color:#245b3e;background:#edf7f1;padding:5px 8px;border-radius:999px}.badge{display:inline-flex;align-items:center;gap:5px;background:#fff1e8;color:#8f4825;padding:5px 8px;border-radius:999px;font-size:11px;font-weight:800;margin-top:10px}@media(max-width:1050px){.prices{grid-template-columns:repeat(3,1fr)}}@media(max-width:820px){.booking-grid{grid-template-columns:1fr}.row{grid-template-columns:1fr}.pay-grid{grid-template-columns:1fr 1fr}.prices{grid-template-columns:1fr 1fr}.back span{display:none}}@media(max-width:520px){.prices,.pay-grid{grid-template-columns:1fr}.card{padding:18px}.right{gap:6px}}
 
-/* === RN Production Dark Cinematic Theme v2 === */
-:root{--bg:#0c0d0e;--paper:#151515;--ink:#f5eee7;--muted:#b8aaa0;--accent:#c97545;--accent2:#e1a176;--dark:#08090a;--line:rgba(228,176,139,.18)}
-body{background:var(--bg);color:var(--ink)}
-.container{width:min(1220px,calc(100% - 38px))}
-.header{background:rgba(8,9,10,.9);border-bottom:1px solid rgba(224,161,118,.2);box-shadow:0 8px 28px rgba(0,0,0,.22)}
-.nav{height:84px}
-.brand{gap:14px}.mark{width:50px;height:50px;background:transparent;border:1.5px solid var(--accent2);color:var(--accent2);font-family:Georgia,serif;font-size:17px;box-shadow:0 0 0 4px rgba(201,117,69,.05)}
-.brand strong{font-family:Georgia,serif;font-size:20px;letter-spacing:.04em;color:#fff;font-weight:600}.brand small{color:#cdb7a8;letter-spacing:.15em}
-.links{gap:27px;font-size:13px;letter-spacing:.02em}.links a{color:#eee4dc}.links a:hover{color:var(--accent2)}
-.langs{background:#111;border-color:rgba(224,161,118,.18)}.lang{color:#d7c7ba}.lang.active{background:var(--accent);color:#fff}
-.btn{background:linear-gradient(135deg,#c97545,#9e4c2d);box-shadow:0 10px 25px rgba(166,79,38,.28);transition:.22s}.btn:hover{transform:translateY(-2px);filter:brightness(1.08)}
-.hero{min-height:820px;background:url('couple1.jpg') center 35%/cover no-repeat;border-bottom:1px solid rgba(224,161,118,.16)}
-.hero:before{background:linear-gradient(90deg,rgba(5,7,8,.96) 0%,rgba(5,7,8,.82) 38%,rgba(5,7,8,.44) 68%,rgba(5,7,8,.28) 100%)}
-.hero .inner{padding-top:110px}.eyebrow,.kicker{color:var(--accent2);letter-spacing:.2em}
-.hero h1{max-width:770px;font-size:clamp(54px,7vw,94px);font-weight:500;text-shadow:0 6px 25px rgba(0,0,0,.35)}
-.hero p{font-size:18px;color:#e2d7cf;max-width:610px}.ghost{background:rgba(12,13,14,.28);border-color:rgba(230,194,169,.55);box-shadow:none}.ghost:hover{background:#f4ede7;color:#111}
-.pills span{border-color:rgba(226,175,140,.3);background:rgba(10,10,10,.45);color:#efe4dc;padding:9px 12px}
-.hero-stats{position:absolute;right:0;top:53%;transform:translateY(-50%);width:245px;background:rgba(16,16,16,.76);backdrop-filter:blur(14px);border:1px solid rgba(225,161,118,.25);border-radius:20px;padding:8px 20px;box-shadow:0 24px 60px rgba(0,0,0,.3)}
-.hero-stats div{padding:15px 0;border-bottom:1px solid rgba(255,255,255,.1)}.hero-stats div:last-child{border-bottom:0}.hero-stats strong{display:block;font-family:Georgia,serif;font-size:21px;color:#fff}.hero-stats span{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#cbb9ac}
-.strip{background:#111213;border-bottom:1px solid rgba(224,161,118,.18)}.stats div{border-color:rgba(224,161,118,.18)}.stats strong{color:#fff}.stats span{color:#a9998e}
-.section{background:#0e0f10}.heading h2,.about h2,.contact h2{color:#fff;font-weight:500}.heading p{color:#aa9d94}
-.cards{gap:20px}.card{background:linear-gradient(180deg,#171717,#121212);border:1px solid rgba(224,161,118,.18);box-shadow:0 20px 50px rgba(0,0,0,.25);transition:.24s}.card:hover{transform:translateY(-5px);border-color:rgba(224,161,118,.42)}.card-media{background:#090909}.card-media:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 50%,rgba(0,0,0,.45))}.num{background:#111;border:1px solid rgba(224,161,118,.55);color:var(--accent2)}.card h3{color:#fff}.card p{color:#ad9e94}.tag{color:#e2a175}
-.dark{background:#08090a;border-top:1px solid rgba(224,161,118,.12);border-bottom:1px solid rgba(224,161,118,.12)}.dark .heading p{color:#9e9088}.photo{border:1px solid rgba(224,161,118,.14);box-shadow:0 16px 40px rgba(0,0,0,.2)}
-#locations{background:#0e0f10}.loc{background:#151515;border-color:rgba(224,161,118,.16);box-shadow:0 18px 45px rgba(0,0,0,.16)}.loc span{color:var(--accent2)}.loc h3{color:#fff}.loc p{color:#aa9d94}
-.about{background:#0a0b0c;border-top:1px solid rgba(224,161,118,.12)}.visual{box-shadow:0 25px 70px rgba(0,0,0,.32);border:1px solid rgba(224,161,118,.18)}.visual-card{background:rgba(10,10,10,.82);border:1px solid rgba(224,161,118,.22);backdrop-filter:blur(14px)}.visual-card h3{color:#fff}.visual-card p{color:#b9aaa0}.about-copy p{color:#b8aaa0}.checks div{background:#121314;border:1px solid rgba(224,161,118,.14);color:#eadfd7}
-.contact{background:#111213}.contact p{color:#aa9d94}.contact-links a{border-color:rgba(224,161,118,.16)}.contact-links span{color:#988b83}.booking{background:#0b0c0d;border:1px solid rgba(224,161,118,.2);box-shadow:0 24px 60px rgba(0,0,0,.26)}.booking h3{color:#fff}.booking label span{color:#d7c7ba}.booking input,.booking select,.booking textarea{background:#151515;border-color:rgba(224,161,118,.18);color:#fff}.booking input:focus,.booking select:focus,.booking textarea:focus{border-color:var(--accent)}
-footer{background:#060708;border-top:1px solid rgba(224,161,118,.16)}.footer-list a{color:#bcaea3}.footer-list a:hover{color:var(--accent2)}.bottom{border-color:rgba(224,161,118,.14);color:#8f8279}.wa{background:#22c55e;box-shadow:0 14px 35px rgba(0,0,0,.34)}
-@media(max-width:980px){.hero-stats{display:none}}
+/* === Dark cinematic booking & payment === */
+:root{--bg:#0b0c0d;--paper:#151515;--ink:#f5eee8;--muted:#ad9f95;--accent:#c97545;--accent2:#e1a176;--line:rgba(224,161,118,.18);--green:#2c9a68;--soft:#101112}
+body{background:radial-gradient(circle at 75% 0%,#23170f 0,transparent 31%),var(--bg);color:var(--ink)}
+.top{background:rgba(7,8,9,.93);border-color:var(--line);backdrop-filter:blur(18px)}.mark{background:transparent;border:1.5px solid var(--accent2);color:var(--accent2);font-family:Georgia,serif}.brand strong{font-family:Georgia,serif;color:#fff;font-size:18px}.brand small{color:#ab9b91}.langs{background:#111;border-color:var(--line)}.lang{color:#d4c5ba}.lang.active{background:var(--accent);color:#fff}.back{color:#ddd1c8}.back:hover{color:var(--accent2)}
+.hero{padding-top:58px}.hero h1{color:#fff;font-weight:500}.hero p{color:#b8aaa0}.eyebrow{color:var(--accent2)}.section-title{color:#fff;font-family:Georgia,serif;font-weight:500}.price-card,.card,.summary{background:linear-gradient(180deg,#171717,#121212);border-color:var(--line);box-shadow:0 22px 55px rgba(0,0,0,.22)}.price-card:hover{border-color:rgba(224,161,118,.45);transform:translateY(-3px)}.price-card h3,.card h2,.card h3,.summary h2,.summary h3{color:#fff}.duration,.details-list,.small{color:#a99a90}.price{color:var(--accent2)}.badge,.vat-mini{background:#24170f;color:#e3a77d;border-color:rgba(224,161,118,.22)}
+.field label{color:#d8cabf}.field input,.field select,.field textarea{background:#0d0e0f;border-color:var(--line);color:#fff}.field input:focus,.field select:focus,.field textarea:focus{border-color:var(--accent)}
+.plan{background:#111213;border-color:rgba(224,161,118,.18);color:#e9ddd5}.plan.active{background:linear-gradient(180deg,#21150f,#17110e);border-color:var(--accent)}.plan p{color:#b9aaa0}.methodbox{background:#111213;border-color:rgba(224,161,118,.18)}.methodbox.active{border-color:var(--accent);box-shadow:0 0 0 1px rgba(201,117,69,.18)}.methodbox .small{color:#9f9188}.method-title{color:#fff}.btn{background:linear-gradient(135deg,#c97545,#9e4c2d);box-shadow:0 12px 28px rgba(166,79,38,.24)}.btn:hover{filter:brightness(1.08);transform:translateY(-2px)}.wa{color:#e2a175}.summary{position:sticky;top:98px}.sumrow{border-color:rgba(224,161,118,.13)}.big{color:#fff}.due{color:var(--accent2)}.remaining{color:#c6b7ac}.safe{background:#102019;border-color:rgba(68,171,118,.22);color:#b8dcc9}.rulebox{background:#18110d;border-color:rgba(224,161,118,.18)}.important{border-color:rgba(224,161,118,.16)}.important li{color:#ad9e94}.vat-note{background:#1b140f;border-color:rgba(224,161,118,.22);color:#e1b18f}
 
-
-/* Mobile Book & Pay CTA */
-.mobile-paybar{display:none}
-@media(max-width:980px){
-  .header{overflow:visible}
-  .nav{height:84px}
-  .mobile-paybar{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    width:calc(100% - 34px);
-    max-width:1220px;
-    margin:0 auto 10px;
-    min-height:44px;
-    border-radius:13px;
-    background:linear-gradient(135deg,#c97545,#9e4c2d);
-    color:#fff;
-    font-weight:900;
-    font-size:14px;
-    letter-spacing:.02em;
-    box-shadow:0 10px 25px rgba(166,79,38,.28)
-  }
-  .links{top:138px}
-  .hero .inner{padding-top:165px}
-}
-@media(max-width:640px){
-  .mobile-paybar{width:calc(100% - 24px);margin-bottom:8px;min-height:42px;font-size:13px}
-  .hero{min-height:790px}
-  .hero .inner{padding-top:160px}
+/* === Detailed RN Production price list === */
+.price-tables{display:grid;gap:18px;margin-bottom:34px}
+.price-table{background:linear-gradient(180deg,#171717,#111213);border:1px solid rgba(224,161,118,.18);border-radius:20px;overflow:hidden;box-shadow:0 18px 45px rgba(0,0,0,.22)}
+.price-table-head{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:17px 20px;border-bottom:1px solid rgba(224,161,118,.18);background:#0c0d0e}
+.price-table-head h3{margin:0;color:#fff;font-family:Georgia,serif;font-size:22px;font-weight:500}
+.price-table-head span{font-size:11px;font-weight:800;color:#e1a176;border:1px solid rgba(224,161,118,.22);border-radius:999px;padding:5px 9px;white-space:nowrap}
+.price-table table{width:100%;border-collapse:collapse}
+.price-table th{background:#1a1a1a;color:#eee4dc;text-align:left;font-size:11px;letter-spacing:.06em;text-transform:uppercase;padding:11px 14px}
+.price-table td{padding:12px 14px;border-top:1px solid rgba(224,161,118,.10);font-size:13px;color:#d8cbc2;vertical-align:top}
+.price-table td:nth-child(1){font-weight:800;color:#fff;white-space:nowrap}
+.price-table td:nth-child(2){font-weight:900;color:#e1a176;white-space:nowrap;font-size:15px}
+.price-row{cursor:pointer;transition:.18s}
+.price-row:hover,.price-row.active{background:rgba(201,117,69,.10)}
+.price-row.active td:first-child{box-shadow:inset 3px 0 0 #c97545}
+.selection-note{margin:-6px 0 22px;color:#ad9f95;font-size:12px}
+@media(max-width:700px){
+ .price-table{border-radius:15px;overflow-x:auto}
+ .price-table-head{padding:14px 15px}
+ .price-table-head h3{font-size:19px}
+ .price-table table{min-width:650px}
+ .price-table th,.price-table td{padding:10px 11px}
 }
 
-
-/* Mobile dark menu fix */
-@media(max-width:980px){
-  .links{
-    background:linear-gradient(180deg,#111315,#0b0c0d) !important;
-    border:1px solid rgba(224,161,118,.22);
-    box-shadow:0 20px 50px rgba(0,0,0,.55) !important;
-    padding:12px !important;
-    border-radius:16px;
-  }
-  .links a{
-    color:#f5eee7 !important;
-    padding:12px 13px;
-    border-radius:10px;
-    border-bottom:1px solid rgba(224,161,118,.10);
-    font-weight:700;
-  }
-  .links a:last-child{border-bottom:0}
-  .links a:hover,.links a:active{
-    background:rgba(201,117,69,.14);
-    color:#e1a176 !important;
-  }
-  .menu{
-    color:#f5eee7;
-    width:38px;height:38px;
-    border-radius:10px;
-    border:1px solid rgba(224,161,118,.18);
-    background:#111315;
-    line-height:1;
-  }
-}
-
-
-
-/* === Mobile header polish: full Book & Pay + RN light sweep === */
-.brand{position:relative;isolation:isolate}
-.brand .mark{
-  position:relative;
-  overflow:hidden;
-  animation:rnMarkGlow 3.4s ease-in-out infinite;
-}
-.brand .mark::after{
-  content:"";
-  position:absolute;
-  top:-35%;bottom:-35%;
-  width:18px;
-  left:-45%;
-  transform:rotate(24deg);
-  background:linear-gradient(90deg,transparent,rgba(255,236,214,.88),transparent);
-  filter:blur(1px);
-  animation:rnSweep 4.2s ease-in-out infinite;
-}
-.brand strong{
-  position:relative;
-  background:linear-gradient(100deg,#fff 0%,#fff 34%,#e1a176 47%,#fff4e7 54%,#fff 68%,#fff 100%);
-  background-size:230% 100%;
-  -webkit-background-clip:text;
-  background-clip:text;
-  color:transparent !important;
-  animation:rnTextShine 4.2s ease-in-out infinite;
-  text-shadow:0 0 16px rgba(225,161,118,.10);
-}
-@keyframes rnSweep{
-  0%,20%{left:-45%;opacity:0}
-  30%{opacity:.9}
-  52%{left:135%;opacity:.35}
-  62%,100%{left:135%;opacity:0}
-}
-@keyframes rnTextShine{
-  0%,22%{background-position:100% 0;text-shadow:0 0 12px rgba(225,161,118,.08)}
-  50%{background-position:0 0;text-shadow:0 0 22px rgba(225,161,118,.28)}
-  78%,100%{background-position:-100% 0;text-shadow:0 0 12px rgba(225,161,118,.08)}
-}
-@keyframes rnMarkGlow{
-  0%,100%{box-shadow:0 0 0 4px rgba(201,117,69,.04),0 0 12px rgba(225,161,118,.12)}
-  50%{box-shadow:0 0 0 4px rgba(201,117,69,.08),0 0 25px rgba(225,161,118,.34)}
-}
-
-@media(max-width:980px){
-  .header{overflow:visible}
-  .nav{height:78px;position:relative}
-  .mobile-paybar{
-    position:absolute !important;
-    left:0 !important;
-    right:0 !important;
-    top:86px !important;
-    width:auto !important;
-    max-width:none !important;
-    margin:0 !important;
-    min-height:46px !important;
-    display:flex !important;
-    align-items:center;
-    justify-content:center;
-    border-radius:14px !important;
-    background:linear-gradient(135deg,#dc824d 0%,#c96f3d 45%,#9d492c 100%) !important;
-    border:1px solid rgba(255,211,178,.26);
-    color:#fff !important;
-    font-size:14px !important;
-    font-weight:900;
-    letter-spacing:.04em;
-    white-space:nowrap;
-    box-shadow:0 12px 30px rgba(143,62,29,.34),inset 0 1px 0 rgba(255,255,255,.16) !important;
-    z-index:22;
-  }
-  .mobile-paybar::before{
-    content:"✦";
-    margin-right:8px;
-    color:#ffe1c9;
-    font-size:11px;
-  }
-  .mobile-paybar::after{
-    content:"→";
-    margin-left:8px;
-    font-size:15px;
-  }
-  .links{top:144px !important}
-  .hero .inner{padding-top:174px !important}
-}
-
-@media(max-width:640px){
-  .container{width:min(100% - 22px,1220px)}
-  .nav{height:76px;gap:8px}
-  .brand{gap:9px;min-width:0;flex:1}
-  .brand .mark{width:43px;height:43px;min-width:43px;font-size:15px}
-  .brand strong{font-size:17px;letter-spacing:.025em;white-space:nowrap}
-  .brand small{display:none}
-  .actions{gap:7px;flex:0 0 auto}
-  .langs{padding:2px}
-  .lang{padding:5px 7px;font-size:10px}
-  .menu{width:37px;height:37px;font-size:22px;display:grid;place-items:center;padding:0}
-  .mobile-paybar{
-    top:83px !important;
-    left:0 !important;
-    right:0 !important;
-    min-height:44px !important;
-    border-radius:12px !important;
-    font-size:13px !important;
-  }
-  .links{top:137px !important;left:11px !important;right:11px !important}
-  .hero{min-height:820px}
-  .hero .inner{padding-top:168px !important}
-}
-
-@media(max-width:380px){
-  .brand strong{font-size:15px}
-  .brand .mark{width:40px;height:40px;min-width:40px}
-  .actions{gap:5px}
-  .lang{padding:5px 6px}
-}
-
-@media (prefers-reduced-motion: reduce){
-  .brand .mark,.brand .mark::after,.brand strong{animation:none !important}
-}
-
-
-
+/* === Google review CTA === */
+.review-strip{padding:0 0 64px}
+.review-box{position:relative;overflow:hidden;display:grid;grid-template-columns:1fr auto;gap:26px;align-items:center;background:linear-gradient(135deg,#171717,#101112);border:1px solid rgba(224,161,118,.22);border-radius:20px;padding:27px 30px;box-shadow:0 20px 50px rgba(0,0,0,.22)}
+.review-box:after{content:"";position:absolute;width:220px;height:220px;right:-90px;top:-120px;border-radius:50%;background:radial-gradient(circle,rgba(201,117,69,.16),transparent 68%);pointer-events:none}
+.review-copy .stars{color:#e1a176;letter-spacing:.12em;font-size:18px;margin-bottom:7px}.review-copy h2{font-family:Georgia,serif;color:#fff;font-weight:500;margin:0 0 8px;font-size:29px}.review-copy p{color:#ad9f95;margin:0;max-width:650px}
+.review-buttons{display:grid;gap:9px;min-width:230px;position:relative;z-index:1}.review-google,.review-maps{display:flex;align-items:center;justify-content:center;text-align:center;border-radius:12px;padding:12px 15px;font-weight:900;font-size:13px}.review-google{background:linear-gradient(135deg,#c97545,#9e4c2d);color:#fff}.review-maps{border:1px solid rgba(224,161,118,.22);background:#0e0f10;color:#e7dad1}
+@media(max-width:720px){.review-box{grid-template-columns:1fr;padding:23px 20px}.review-buttons{min-width:0}}
 
 </style>
 </head>
 <body>
-<header class="header"><div class="container nav"><a class="brand" href="#home" aria-label="RN Production home"><span class="mark">RN</span><span><strong>RN Production</strong><small>Films & Photography</small></span></a><nav class="links" id="links"><a href="#services" data-t="navServices">Services</a><a href="#portfolio" data-t="navPortfolio">Portfolio</a><a href="#locations" data-t="navLocations">Locations</a><a href="#about" data-t="navAbout">About</a><a href="#contact" data-t="navContact">Contact</a><a href="client.html" data-t="navClient">Client Access</a><a href="payment.html" data-t="navPay">Book & Pay</a></nav><div class="actions"><div class="langs"><button class="lang active" data-lang="en">EN</button><button class="lang" data-lang="es">ES</button></div><a class="btn" href="payment.html" data-t="bookNow">Book & Pay</a><button class="menu" id="menu">☰</button></div><a class="mobile-paybar" href="payment.html" data-t="bookNow">Book & Pay</a></div></header>
-<section class="hero" id="home"><div class="container inner"><div class="eyebrow" data-t="heroEyebrow">Barcelona • Photography • Film</div><h1 data-t="heroTitle">Your Barcelona story, captured beautifully.</h1><p data-t="heroText">Professional street sessions, travel photography, special events and cinematic video production across Barcelona.</p><div class="hero-actions"><a class="btn" href="https://wa.me/34666534703" target="_blank" data-t="whatsappBooking">Book on WhatsApp</a><a class="btn ghost" href="#portfolio" data-t="viewWork">View our work</a></div><div class="pills"><span data-t="pill1">Solo • Couples • Families</span><span data-t="pill2">Quinceañeras & Events</span><span data-t="pill3">Tourist • Couple • Quinceañera</span></div></div></section>
-<div class="strip"><div class="container stats"><div><strong>Barcelona</strong><span data-t="stat1">Based in the city</span></div><div><strong>Photo + Film</strong><span data-t="stat2">Creative coverage</span></div><div><strong>Flexible</strong><span data-t="stat3">Travel & event sessions</span></div><div><strong>Fast contact</strong><span data-t="stat4">WhatsApp booking</span></div></div></div>
-<section class="section" id="services"><div class="container"><div class="heading"><div><span class="kicker" data-t="servicesKicker">What we do</span><h2 data-t="servicesTitle">Photography and film with a personal touch.</h2></div><p data-t="servicesLead">From relaxed Barcelona street sessions to special events and polished post-production.</p></div><div class="cards"><article class="card"><div class="card-media"><div class="num">01</div><img src="tourist1.jpg" alt="Tourist photography in Barcelona"></div><h3 data-t="s1t">Travel & Street Photography</h3><p data-t="s1p">Professional tourist, solo, couple and family portraits with natural poses and beautiful Barcelona backdrops.</p><span class="tag" data-t="s1g">Portraits • Lifestyle • Travel</span></article><article class="card"><div class="card-media"><div class="num">02</div><img src="quince1.jpg" alt="Quinceañera and events photography"></div><h3 data-t="s2t">Event Videography & Films</h3><p data-t="s2p">Creative photo and video coverage for quinceañeras, celebrations, couple stories and special occasions.</p><span class="tag" data-t="s2g">Events • Reels • Films</span></article><article class="card"><div class="card-media"><div class="num">03</div><img src="couple2.jpg" alt="Edited couple portrait in Barcelona"></div><h3 data-t="s3t">Post-Production</h3><p data-t="s3p">Professional photo retouching, video editing and graphic design for a clean, finished look.</p><span class="tag" data-t="s3g">Retouching • Editing • Design</span></article></div></div></section>
-<section class="section dark" id="portfolio"><div class="container"><div class="heading"><div><span class="kicker" data-t="portfolioKicker">Selected work</span><h2 data-t="portfolioTitle">Barcelona through the lens.</h2></div><p data-t="portfolioLead">A curated gallery featuring RN Production's real work: couples, tourist portraits and quinceañera sessions in Barcelona.</p></div><div class="portfolio"><figure class="photo tall"><img src="couple1.jpg" alt="Couple photoshoot in Barcelona"><figcaption data-t="cap1">Couple photoshoot</figcaption></figure><figure class="photo"><img src="couple2.jpg" alt="Romantic portrait in Barcelona"><figcaption data-t="cap2">Love stories in Barcelona</figcaption></figure><figure class="photo"><img src="couple3.jpg" alt="Couple portrait near Sagrada Família"><figcaption data-t="cap3">Couples & memories</figcaption></figure><figure class="photo wide"><img src="quince2.jpg" alt="Quinceañera photoshoot in Barcelona"><figcaption data-t="cap4">Quinceañera photoshoot</figcaption></figure><figure class="photo"><img src="quince1.jpg" alt="Quinceañera portrait session"><figcaption data-t="cap5">Quinceañera portrait</figcaption></figure><figure class="photo"><img src="tourist1.jpg" alt="Tourist portrait at Sagrada Família"><figcaption data-t="cap6">Tourist photoshoot</figcaption></figure></div></div></section>
-<section class="section" id="locations"><div class="container"><div class="heading"><div><span class="kicker" data-t="locKicker">Barcelona favourites</span><h2 data-t="locTitle">Iconic places for your photo session.</h2></div><p data-t="locLead">Choose a classic Barcelona backdrop or ask for a custom route that fits your style.</p></div><div class="locations"><article class="loc"><span>01</span><h3>Sagrada Família</h3><p data-t="l1">Iconic architecture, dramatic lines and timeless Barcelona energy.</p></article><article class="loc"><span>02</span><h3>Gothic Quarter</h3><p data-t="l2">Historic alleys, textured walls and cinematic old-city atmosphere.</p></article><article class="loc"><span>03</span><h3>Arc de Triomf</h3><p data-t="l3">Open space, warm tones and a relaxed city-session feeling.</p></article><article class="loc"><span>04</span><h3>Ciutadella Park</h3><p data-t="l4">Green scenery, soft natural light and easy-going portraits.</p></article></div></div></section>
-<section class="about" id="about"><div class="container about-grid"><div class="visual"><div class="visual-card"><span class="kicker">RN Production</span><h3 data-t="aboutCardTitle">Made for real moments.</h3><p data-t="aboutCardText">Relaxed direction, Barcelona backdrops and a clean editing style — designed around your story.</p></div></div><div class="about-copy"><span class="kicker" data-t="aboutKicker">About RN Production</span><h2 data-t="aboutTitle">Professional photography & films in Barcelona.</h2><p data-t="aboutP1">RN Production, also operating as RN Films & Photography, provides freelance photography, video production and post-production services in Barcelona.</p><p data-t="aboutP2">The focus is simple: make clients feel comfortable, capture authentic moments and deliver visuals that feel polished without losing their personality.</p><div class="checks"><div>✓ <span data-t="c1">Solo, couple and family sessions</span></div><div>✓ <span data-t="c2">Special events and celebrations</span></div><div>✓ <span data-t="c3">Photo retouching and video editing</span></div><div>✓ <span data-t="c4">Barcelona location guidance</span></div></div></div></div></section>
-<section class="contact" id="contact"><div class="container contact-grid"><div><span class="kicker" data-t="contactKicker">Contact & booking</span><h2 data-t="contactTitle">Ready to plan your Barcelona shoot?</h2><p data-t="contactLead">Tell us your date, group size, preferred style and the kind of session you have in mind.</p><div class="contact-links"><a href="tel:+34666534703"><span>Phone / WhatsApp</span><strong>+34 666 534 703</strong></a><a href="https://www.instagram.com/rn_production19/" target="_blank"><span>Instagram</span><strong>@rn_production19</strong></a><a href="https://www.facebook.com/share/1EdqPot72D/" target="_blank"><span>Facebook</span><strong>RN Production</strong></a></div></div><form class="booking" id="booking"><h3 data-t="formTitle">Quick booking request</h3><label><span data-t="nameLabel">Your name</span><input id="name" required></label><label><span data-t="dateLabel">Preferred date</span><input type="date" id="date"></label><label><span data-t="sessionLabel">Session type</span><select id="session"><option data-t="o1">Tourist / street photography</option><option data-t="o2">Couple photoshoot</option><option data-t="o3">Quinceañera photoshoot</option><option data-t="o4">Event photography / video</option><option data-t="o5">Post-production / editing</option></select></label><label><span data-t="messageLabel">Message</span><textarea id="message" rows="4"></textarea></label><button class="btn full" type="submit" data-t="send">Send via WhatsApp</button><small data-t="formNote">This form opens WhatsApp with your booking details.</small></form></div></section>
-<footer><div class="container footer-grid"><div><a class="brand" href="#home"><span class="mark">RN</span><span><strong>RN Production</strong><small>Films & Photography</small></span></a><p data-t="footerText">Photography, films and creative post-production in Barcelona.</p></div><div class="footer-list"><a href="#services" data-t="navServices">Services</a><a href="#portfolio" data-t="navPortfolio">Portfolio</a><a href="#locations" data-t="navLocations">Locations</a><a href="#contact" data-t="navContact">Contact</a><a href="client.html" data-t="navClient">Client Access</a><a href="payment.html" data-t="navPay">Book & Pay</a></div><div class="footer-list"><a href="https://www.instagram.com/rn_production19/" target="_blank">Instagram ↗</a><a href="https://www.facebook.com/share/1EdqPot72D/" target="_blank">Facebook ↗</a><a href="https://wa.me/34666534703" target="_blank">WhatsApp ↗</a></div></div><div class="container bottom"><span>© <span id="year"></span> RN Production</span><span>Barcelona, Spain</span></div></footer>
-<a class="wa" href="https://wa.me/34666534703" target="_blank">WA</a>
+<header class="top"><div class="wrap nav"><a class="brand" href="index.html"><span class="mark">RN</span><span><strong>RN Production</strong><small>FILMS & PHOTOGRAPHY</small></span></a><div class="right"><div class="langs"><button class="lang active" data-lang="en">EN</button><button class="lang" data-lang="es">ES</button></div><a class="back" href="index.html">← <span data-t="back">Back to website</span></a></div></div></header>
+
+<main class="wrap">
+<section class="hero"><span class="eyebrow" data-t="eyebrow">Barcelona booking</span><h1 data-t="title">Choose your photoshoot package.</h1><p data-t="lead">Select a package, date and payment option. Your booking amount is calculated automatically.</p><div class="rulebox"><strong data-t="ruleTitle">Booking payment rule</strong><span data-t="ruleText">Choose 20% advance or 100% full payment. The amount is calculated automatically.</span></div><div class="vat-note"><b>✓</b><div><strong data-t="vatTitle">21% VAT included</strong><span data-t="vatText">All prices shown on this booking page already include 21% VAT. No additional VAT will be added at checkout.</span></div></div></section>
+
+<h2 class="section-title" data-t="priceTitle">Packages & prices</h2>
+<section class="price-tables" id="priceTables"></section><div class="selection-note" data-t="selectHint">Tap a row to select that package and duration for booking.</div>
+
+<section class="booking-grid">
+<form class="card" id="payForm">
+<h2 data-t="bookingTitle">Book your session</h2>
+<div class="row"><div class="field"><label data-t="name">Your name</label><input id="name" required></div><div class="field"><label data-t="email">Email</label><input id="email" type="email" required></div></div>
+<div class="row"><div class="field"><label data-t="date">Session date</label><input id="date" type="date" required></div><div class="field"><label data-t="package">Package</label><select id="package"></select></div></div>
+<div class="field"><label data-t="durationLabel">Duration / option</label><select id="duration"></select></div>
+<div class="field"><label data-t="note">Booking note</label><textarea id="note" rows="3" placeholder="Optional"></textarea></div>
+
+<h3 data-t="payPlan">Online payment</h3>
+<div class="plans">
+<label class="plan active" data-plan="advance"><input type="radio" name="plan" value="advance" checked><span><strong data-t="advanceTitle">Pay 20% advance now</strong><small data-t="advanceText">Reserve your session with a 20% advance. The remaining 80% is paid at the photoshoot.</small></span></label>
+<label class="plan" data-plan="full"><input type="radio" name="plan" value="full"><span><strong data-t="fullTitle">Pay 100% securely online</strong><small data-t="fullText">Pay the full package amount now through SumUp secure checkout.</small></span></label>
+</div>
+
+<h3 class="method-title" data-t="methodTitle">Payment method</h3>
+<div class="pay-grid" style="grid-template-columns:1fr"><button type="button" class="method active" data-method="sumup">💳 <span data-t="sumup">SumUp Secure Payment</span><small data-t="cardBrands">Visa • Mastercard</small></button></div>
+<div class="methodbox" id="methodBox" data-t="sumupNote">You will be redirected to SumUp secure checkout to complete your card payment.</div>
+<div class="methodbox" id="paymentStatus" style="display:none;border-color:#a64f25;color:#ffd7c2;background:rgba(166,79,37,.12)"></div>
+<button class="btn" type="submit" id="submitBtn" data-t="continue">Proceed to secure payment</button>
+<a class="wa" id="waLink" href="https://wa.me/34666534703" target="_blank" data-t="wa">Or confirm this booking on WhatsApp</a>
+</form>
+
+<aside class="card"><h2 data-t="summary">Booking summary</h2><div class="summary"><div class="sumrow"><span data-t="sumPackage">Package</span><strong id="sumPackage">Solo Photoshoot</strong></div><div class="sumrow"><span data-t="sumDuration">Duration</span><strong id="sumDuration">1 Hour</strong></div><div class="sumrow"><span data-t="sumTotal">Package total</span><strong id="sumTotal">€90.00</strong></div><div class="sumrow"><span data-t="sumTax">Tax</span><strong data-t="taxIncluded">21% VAT included</strong></div><div class="sumrow"><span data-t="sumPlan">Payment plan</span><strong id="sumPlan">Full payment 100%</strong></div><div class="sumrow"><span data-t="sumMethod">Method</span><strong id="sumMethod">SumUp</strong></div></div><div class="due"><div class="big"><span data-t="dueNow">Pay now</span><strong id="dueNow">€90.00</strong></div><div class="remaining"><span data-t="remaining">Balance after payment</span><strong id="remaining">€0.00</strong></div></div><div class="safe"><span>✓</span><div><strong data-t="clear">Clear payment terms</strong><div class="small" data-t="clearText">Your selected package is paid in full through SumUp secure checkout.</div></div></div><div class="important"><strong data-t="important">Important booking information</strong><ul><li data-t="info1">Full online payment confirms the reserved session slot.</li><li data-t="info2">Payment is completed on SumUp secure checkout.</li><li data-t="info3">RN Production does not store your card details on this website.</li><li data-t="info4">No payment remains due at the photoshoot after successful full online payment.</li></ul></div></aside>
+</section>
+</main>
+<section class="review-strip"><div class="wrap"><div class="review-box"><div class="review-copy"><div class="stars">★★★★★</div><h2 data-t="reviewTitle">Enjoyed your RN Production session?</h2><p data-t="reviewText">After your photoshoot, share your experience on Google. Your review helps other Barcelona clients book with confidence.</p></div><div class="review-buttons"><a class="review-google" href="https://g.page/r/CXD_HN_-zevoEAE/review" target="_blank" rel="noopener" data-t="reviewBtn">★★★★★ Leave a Google Review</a><a class="review-maps" href="https://maps.app.goo.gl/xDWHVEqAa4MwTd6VA?g_st=awb" target="_blank" rel="noopener" data-t="mapsBtn">View on Google Maps ↗</a></div></div></div></section>
+
+
 <script>
-const T={en:{navServices:'Services',navPortfolio:'Portfolio',navLocations:'Locations',navAbout:'About',navContact:'Contact',navClient:'Client Access',navPay:'Book & Pay',bookNow:'Book & Pay',heroEyebrow:'Barcelona • Photography • Film',heroTitle:'Your Barcelona story, captured beautifully.',heroText:'Professional street sessions, travel photography, special events and cinematic video production across Barcelona.',whatsappBooking:'Book on WhatsApp',viewWork:'View our work',pill1:'Solo • Couples • Families',pill2:'Quinceañeras & Events',pill3:'Tourist • Couple • Quinceañera',stat1:'Based in the city',stat2:'Creative coverage',stat3:'Travel & event sessions',stat4:'WhatsApp booking',servicesKicker:'What we do',servicesTitle:'Photography and film with a personal touch.',servicesLead:'From relaxed Barcelona street sessions to special events and polished post-production.',s1t:'Travel & Street Photography',s1p:'Professional tourist, solo, couple and family portraits with natural poses and beautiful Barcelona backdrops.',s1g:'Portraits • Lifestyle • Travel',s2t:'Event Videography & Films',s2p:'Creative photo and video coverage for quinceañeras, celebrations, couple stories and special occasions.',s2g:'Events • Reels • Films',s3t:'Post-Production',s3p:'Professional photo retouching, video editing and graphic design for a clean, finished look.',s3g:'Retouching • Editing • Design',portfolioKicker:'Selected work',portfolioTitle:'Barcelona through the lens.',portfolioLead:"A curated gallery featuring RN Production's real work: couples, tourist portraits and quinceañera sessions in Barcelona.",cap1:'Couple photoshoot',cap2:'Love stories in Barcelona',cap3:'Couples & memories',cap4:'Quinceañera photoshoot',cap5:'Quinceañera portrait',cap6:'Tourist photoshoot',locKicker:'Barcelona favourites',locTitle:'Iconic places for your photo session.',locLead:'Choose a classic Barcelona backdrop or ask for a custom route that fits your style.',l1:'Iconic architecture, dramatic lines and timeless Barcelona energy.',l2:'Historic alleys, textured walls and cinematic old-city atmosphere.',l3:'Open space, warm tones and a relaxed city-session feeling.',l4:'Green scenery, soft natural light and easy-going portraits.',aboutCardTitle:'Made for real moments.',aboutCardText:'Relaxed direction, Barcelona backdrops and a clean editing style — designed around your story.',aboutKicker:'About RN Production',aboutTitle:'Professional photography & films in Barcelona.',aboutP1:'RN Production, also operating as RN Films & Photography, provides freelance photography, video production and post-production services in Barcelona.',aboutP2:'The focus is simple: make clients feel comfortable, capture authentic moments and deliver visuals that feel polished without losing their personality.',c1:'Solo, couple and family sessions',c2:'Special events and celebrations',c3:'Photo retouching and video editing',c4:'Barcelona location guidance',contactKicker:'Contact & booking',contactTitle:'Ready to plan your Barcelona shoot?',contactLead:'Tell us your date, group size, preferred style and the kind of session you have in mind.',formTitle:'Quick booking request',nameLabel:'Your name',dateLabel:'Preferred date',sessionLabel:'Session type',messageLabel:'Message',o1:'Tourist / street photography',o2:'Couple photoshoot',o3:'Quinceañera photoshoot',o4:'Event photography / video',o5:'Post-production / editing',send:'Send via WhatsApp',formNote:'This form opens WhatsApp with your booking details.',footerText:'Photography, films and creative post-production in Barcelona.'},es:{navServices:'Servicios',navPortfolio:'Portafolio',navLocations:'Lugares',navAbout:'Sobre nosotros',navContact:'Contacto',navClient:'Acceso clientes',navPay:'Reservar y pagar',bookNow:'Reservar y pagar',heroEyebrow:'Barcelona • Fotografía • Vídeo',heroTitle:'Tu historia en Barcelona, capturada con estilo.',heroText:'Sesiones urbanas, fotografía de viaje, eventos especiales y producción de vídeo cinematográfico en Barcelona.',whatsappBooking:'Reservar por WhatsApp',viewWork:'Ver trabajos',pill1:'Solo • Parejas • Familias',pill2:'Quinceañeras y eventos',pill3:'Turista • Parejas • Quinceañera',stat1:'Con base en la ciudad',stat2:'Cobertura creativa',stat3:'Viajes y eventos',stat4:'Reservas por WhatsApp',servicesKicker:'Qué hacemos',servicesTitle:'Fotografía y vídeo con un enfoque personal.',servicesLead:'Desde sesiones relajadas por Barcelona hasta eventos especiales y postproducción profesional.',s1t:'Fotografía de viaje y urbana',s1p:'Retratos profesionales para turistas, personas, parejas y familias con poses naturales y escenarios bonitos de Barcelona.',s1g:'Retratos • Lifestyle • Viajes',s2t:'Vídeo de eventos y películas',s2p:'Cobertura creativa de foto y vídeo para quinceañeras, celebraciones, historias de pareja y ocasiones especiales.',s2g:'Eventos • Reels • Vídeo',s3t:'Postproducción',s3p:'Retoque fotográfico, edición de vídeo y diseño gráfico profesional para un acabado limpio y cuidado.',s3g:'Retoque • Edición • Diseño',portfolioKicker:'Trabajos seleccionados',portfolioTitle:'Barcelona a través del objetivo.',portfolioLead:'Estas imágenes son de muestra. Sustitúyelas por el portafolio real de RN Production antes de publicar.',cap1:'Sesión de pareja',cap2:'Historias de amor en Barcelona',cap3:'Parejas y recuerdos',cap4:'Sesión de quinceañera',cap5:'Retrato de quinceañera',cap6:'Sesión turística',locKicker:'Lugares favoritos',locTitle:'Escenarios icónicos para tu sesión.',locLead:'Elige un lugar clásico de Barcelona o pide una ruta personalizada según tu estilo.',l1:'Arquitectura icónica, líneas potentes y la energía inconfundible de Barcelona.',l2:'Calles históricas, texturas y una atmósfera cinematográfica.',l3:'Espacios abiertos, tonos cálidos y una sesión urbana relajada.',l4:'Naturaleza, luz suave y retratos espontáneos.',aboutCardTitle:'Creado para momentos reales.',aboutCardText:'Dirección relajada, escenarios de Barcelona y una edición limpia, pensada alrededor de tu historia.',aboutKicker:'Sobre RN Production',aboutTitle:'Fotografía y vídeo profesional en Barcelona.',aboutP1:'RN Production, también conocido como RN Films & Photography, ofrece servicios freelance de fotografía, producción de vídeo y postproducción en Barcelona.',aboutP2:'El objetivo es sencillo: que el cliente se sienta cómodo, capturar momentos auténticos y entregar imágenes profesionales sin perder naturalidad.',c1:'Sesiones individuales, parejas y familias',c2:'Eventos y celebraciones',c3:'Retoque fotográfico y edición de vídeo',c4:'Asesoría de localizaciones en Barcelona',contactKicker:'Contacto y reservas',contactTitle:'¿Listo para planear tu sesión en Barcelona?',contactLead:'Cuéntanos la fecha, número de personas, estilo que buscas y el tipo de sesión.',formTitle:'Solicitud rápida de reserva',nameLabel:'Tu nombre',dateLabel:'Fecha preferida',sessionLabel:'Tipo de sesión',messageLabel:'Mensaje',o1:'Fotografía turística / urbana',o2:'Sesión de pareja',o3:'Sesión de quinceañera',o4:'Fotografía / vídeo de evento',o5:'Postproducción / edición',send:'Enviar por WhatsApp',formNote:'Este formulario abre WhatsApp con los datos de tu reserva.',footerText:'Fotografía, vídeo y postproducción creativa en Barcelona.'}};let L='en';document.querySelectorAll('.lang').forEach(b=>b.onclick=()=>{L=b.dataset.lang;document.documentElement.lang=L;document.querySelectorAll('[data-t]').forEach(e=>{const k=e.dataset.t;if(T[L][k])e.textContent=T[L][k]});document.querySelectorAll('.lang').forEach(x=>x.classList.toggle('active',x.dataset.lang===L))});document.getElementById('menu').onclick=()=>document.getElementById('links').classList.toggle('open');document.querySelectorAll('#links a').forEach(a=>a.onclick=()=>document.getElementById('links').classList.remove('open'));document.getElementById('booking').onsubmit=e=>{e.preventDefault();const intro=L==='es'?'Hola RN Production, me gustaría reservar una sesión.':'Hi RN Production, I would like to book a session.';const text=`${intro}\n\nName: ${document.getElementById('name').value}\nDate: ${document.getElementById('date').value||'Not specified'}\nSession: ${document.getElementById('session').value}\nMessage: ${document.getElementById('message').value||'No extra message'}`;window.open('https://wa.me/34666534703?text='+encodeURIComponent(text),'_blank')};document.getElementById('year').textContent=new Date().getFullYear();
+const packageData={
+ solo:{name:{en:'Solo Photoshoot',es:'Sesión individual'},options:[
+  {id:'1h',duration:{en:'1 Hour',es:'1 hora'},price:90,services:{en:'20 High-Res Photos, 1 Location, Online Gallery',es:'20 fotos en alta resolución, 1 ubicación, galería online'}},
+  {id:'2h',duration:{en:'2 Hours',es:'2 horas'},price:160,services:{en:'40 High-Res Photos, 2 Locations, Outfit Change',es:'40 fotos en alta resolución, 2 ubicaciones, cambio de vestuario'}},
+  {id:'3h',duration:{en:'3 Hours (Half Day)',es:'3 horas (medio día)'},price:220,services:{en:'60 High-Res Photos, 3 Locations, Multiple Outfits',es:'60 fotos en alta resolución, 3 ubicaciones, varios vestuarios'}},
+  {id:'6h',duration:{en:'6 Hours (Full Day)',es:'6 horas (día completo)'},price:400,services:{en:'100+ High-Res Photos, All RAW Files, Video Reel',es:'100+ fotos en alta resolución, todos los archivos RAW, video reel'}}]},
+ couple:{name:{en:'Couple Photoshoot',es:'Sesión de pareja'},options:[
+  {id:'1h',duration:{en:'1 Hour',es:'1 hora'},price:120,services:{en:'25 High-Res Photos, Romantic Walk, Online Gallery',es:'25 fotos en alta resolución, paseo romántico, galería online'}},
+  {id:'2h',duration:{en:'2 Hours',es:'2 horas'},price:200,services:{en:'45 High-Res Photos, 2 Romantic Spots, Outfit Change',es:'45 fotos en alta resolución, 2 lugares románticos, cambio de vestuario'}},
+  {id:'3h',duration:{en:'3 Hours (Half Day)',es:'3 horas (medio día)'},price:280,services:{en:'70 High-Res Photos, 3 Locations, Full Gallery Access',es:'70 fotos en alta resolución, 3 ubicaciones, acceso completo a la galería'}},
+  {id:'6h',duration:{en:'6 Hours (Full Day)',es:'6 horas (día completo)'},price:500,services:{en:'120+ High-Res Photos, All RAW Files, Short Video Reel',es:'120+ fotos en alta resolución, todos los archivos RAW, video reel corto'}}]},
+ group:{name:{en:'Group / Family Session (Up to 6 People)',es:'Sesión de grupo / familia (hasta 6 personas)'},options:[
+  {id:'1h',duration:{en:'1 Hour',es:'1 hora'},price:150,services:{en:'30 High-Res Photos, Individual & Group Shots',es:'30 fotos en alta resolución, fotos individuales y de grupo'}},
+  {id:'2h',duration:{en:'2 Hours',es:'2 horas'},price:260,services:{en:'55 High-Res Photos, 2 Locations, Full Group Coverage',es:'55 fotos en alta resolución, 2 ubicaciones, cobertura completa del grupo'}},
+  {id:'3h',duration:{en:'3 Hours (Half Day)',es:'3 horas (medio día)'},price:350,services:{en:'80 High-Res Photos, 3 Locations, Online Delivery',es:'80 fotos en alta resolución, 3 ubicaciones, entrega online'}},
+  {id:'6h',duration:{en:'6 Hours (Full Day)',es:'6 horas (día completo)'},price:600,services:{en:'150+ High-Res Photos, All RAW Files, Family Video Reel',es:'150+ fotos en alta resolución, todos los archivos RAW, video reel familiar'}}]},
+ quince:{name:{en:'Quinceañera Photoshoot',es:'Sesión de quinceañera'},options:[
+  {id:'1.5h',duration:{en:'1.5 Hours',es:'1,5 horas'},price:200,services:{en:'40 High-Res Photos, Outfit Changes, Video Reel',es:'40 fotos en alta resolución, cambios de vestuario, video reel'}},
+  {id:'3h',duration:{en:'3 Hours (Half Day)',es:'3 horas (medio día)'},price:350,services:{en:'75 High-Res Photos, 2–3 Locations, Video Highlights',es:'75 fotos en alta resolución, 2–3 ubicaciones, video de momentos destacados'}},
+  {id:'6h',duration:{en:'6 Hours (Full Day)',es:'6 horas (día completo)'},price:600,services:{en:'130+ High-Res Photos, Full Outfit Coverage, Cinematic Reel',es:'130+ fotos en alta resolución, cobertura completa de vestuario, reel cinematográfico'}}]}
+};
+const tr={
+ en:{back:'Back to website',eyebrow:'Barcelona booking',title:'Choose your photoshoot package.',lead:'Select a package, duration, date and payment option. Your booking amount is calculated automatically.',ruleTitle:'Booking payment rule',ruleText:'Choose 20% advance or 100% full payment. The amount is calculated automatically.',vatTitle:'21% VAT included',vatText:'All prices shown on this booking page already include 21% VAT. No additional VAT will be added at checkout.',priceTitle:'Packages & prices',selectHint:'Tap a row to select that package and duration for booking.',bookingTitle:'Book your session',name:'Your name',email:'Email',date:'Session date',package:'Package',durationLabel:'Duration / option',note:'Booking note',payPlan:'Online payment',advanceTitle:'Pay 20% advance now',advanceText:'Reserve your session with a 20% advance. The remaining 80% is paid at the photoshoot.',fullTitle:'Pay 100% securely online',fullText:'Pay the full package amount now through SumUp secure checkout.',methodTitle:'Payment method',sumup:'SumUp Secure Payment',cardBrands:'Visa • Mastercard',sumupNote:'You will be redirected to SumUp secure checkout to complete your card payment.',continue:'Proceed to secure payment',wa:'Or confirm this booking on WhatsApp',summary:'Booking summary',sumPackage:'Package',sumDuration:'Duration',sumTotal:'Package total',sumTax:'Tax',taxIncluded:'21% VAT included',sumPlan:'Payment plan',sumMethod:'Method',dueNow:'Pay now',remaining:'Balance after payment',clear:'Clear payment terms',clearText:'Your selected package is paid in full through SumUp secure checkout.',important:'Important booking information',info1:'Full online payment confirms the reserved session slot.',info2:'Payment is completed on SumUp secure checkout.',info3:'RN Production never receives or stores your card details on this website.',info4:'No payment remains due at the session after successful full online payment.',durationHead:'Duration',priceHead:'Price (inc. VAT)',servicesHead:'Included services',vatBadge:'21% VAT included',reviewTitle:'Enjoyed your RN Production session?',reviewText:'After your photoshoot, share your experience on Google. Your review helps other Barcelona clients book with confidence.',reviewBtn:'★★★★★ Leave a Google Review',mapsBtn:'View on Google Maps ↗'},
+ es:{back:'Volver a la web',eyebrow:'Reservas Barcelona',title:'Elige tu paquete de fotos.',lead:'Selecciona paquete, duración, fecha y forma de pago. El importe se calcula automáticamente.',ruleTitle:'Regla de pago de la reserva',ruleText:'Elige anticipo del 20% o pago completo del 100%. El importe se calcula automáticamente.',vatTitle:'21% IVA incluido',vatText:'Todos los precios mostrados en esta página ya incluyen el 21% de IVA. No se añadirá IVA adicional.',priceTitle:'Paquetes y precios',selectHint:'Toca una fila para seleccionar ese paquete y duración para la reserva.',bookingTitle:'Reserva tu sesión',name:'Tu nombre',email:'Correo electrónico',date:'Fecha de la sesión',package:'Paquete',durationLabel:'Duración / opción',note:'Nota de reserva',payPlan:'Pago online',advanceTitle:'Pagar 20% ahora',advanceText:'Reserva la sesión con un anticipo del 20%. El 80% restante se paga el día de la sesión.',fullTitle:'Pagar 100% online de forma segura',fullText:'Paga el importe completo ahora mediante el checkout seguro de SumUp.',methodTitle:'Método de pago',sumup:'Pago seguro con SumUp',cardBrands:'Visa • Mastercard',sumupNote:'Serás redirigido al checkout seguro de SumUp para completar el pago con tarjeta.',continue:'Ir al pago seguro',wa:'O confirma esta reserva por WhatsApp',summary:'Resumen de reserva',sumPackage:'Paquete',sumDuration:'Duración',sumTotal:'Total del paquete',sumTax:'Impuestos',taxIncluded:'21% IVA incluido',sumPlan:'Plan de pago',sumMethod:'Método',dueNow:'Pagar ahora',remaining:'Saldo después del pago',clear:'Condiciones claras',clearText:'El paquete seleccionado se paga completamente mediante el checkout seguro de SumUp.',important:'Información importante',info1:'El pago completo online confirma la franja reservada.',info2:'El pago se completa en el checkout seguro de SumUp.',info3:'RN Production no recibe ni almacena los datos de tu tarjeta en esta web.',info4:'No queda ningún pago pendiente el día de la sesión tras completar el pago online.',durationHead:'Duración',priceHead:'Precio (IVA incl.)',servicesHead:'Servicios incluidos',vatBadge:'21% IVA incluido',reviewTitle:'¿Disfrutaste tu sesión con RN Production?',reviewText:'Después de tu sesión, comparte tu experiencia en Google. Tu reseña ayuda a otros clientes de Barcelona a reservar con confianza.',reviewBtn:'★★★★★ Dejar una reseña en Google',mapsBtn:'Ver en Google Maps ↗'}
+};
+let lang='en',method='sumup';
+const pkgSel=document.getElementById('package'),durSel=document.getElementById('duration');
+function plan(){const r=document.querySelector('input[name="plan"]:checked');return r?r.value:'advance'}
+function money(v){return '€'+Number(v).toFixed(2)}
+function currentPkg(){return packageData[pkgSel.value]}
+function currentOption(){return currentPkg().options.find(o=>o.id===durSel.value)||currentPkg().options[0]}
+function pkgName(){return currentPkg().name[lang]}
+function renderPackageSelect(){
+ const keep=pkgSel.value||'solo'; pkgSel.innerHTML='';
+ Object.entries(packageData).forEach(([key,pkg])=>{const o=document.createElement('option');o.value=key;o.textContent=pkg.name[lang];pkgSel.appendChild(o)});
+ pkgSel.value=packageData[keep]?keep:'solo'; renderDurationSelect();
+}
+function renderDurationSelect(keepId){
+ const pkg=currentPkg(),keep=keepId||durSel.value;durSel.innerHTML='';
+ pkg.options.forEach(opt=>{const o=document.createElement('option');o.value=opt.id;o.textContent=`${opt.duration[lang]} — ${money(opt.price)}`;durSel.appendChild(o)});
+ durSel.value=pkg.options.some(o=>o.id===keep)?keep:pkg.options[0].id;
+}
+function renderTables(){
+ const host=document.getElementById('priceTables');host.innerHTML='';
+ Object.entries(packageData).forEach(([key,pkg])=>{
+  const box=document.createElement('article');box.className='price-table';
+  box.innerHTML=`<div class="price-table-head"><h3>${pkg.name[lang]}</h3><span>${tr[lang].vatBadge}</span></div><table><thead><tr><th>${tr[lang].durationHead}</th><th>${tr[lang].priceHead}</th><th>${tr[lang].servicesHead}</th></tr></thead><tbody>${pkg.options.map(opt=>`<tr class="price-row" data-package="${key}" data-duration="${opt.id}"><td>${opt.duration[lang]}</td><td>${money(opt.price)}</td><td>${opt.services[lang]}</td></tr>`).join('')}</tbody></table>`;
+  host.appendChild(box);
+ });
+ document.querySelectorAll('.price-row').forEach(row=>row.onclick=()=>{pkgSel.value=row.dataset.package;renderDurationSelect(row.dataset.duration);update();document.getElementById('payForm').scrollIntoView({behavior:'smooth',block:'start'})});
+}
+function update(){
+ const opt=currentOption(),t=opt.price,pl=plan();
+ const due=pl==='advance'?t*.20:t,rem=pl==='advance'?t*.80:0;
+ document.getElementById('sumPackage').textContent=pkgName();
+ document.getElementById('sumDuration').textContent=opt.duration[lang];
+ document.getElementById('sumTotal').textContent=money(t);
+ document.getElementById('sumPlan').textContent=pl==='advance'?(lang==='es'?'Anticipo 20%':'20% advance'):(lang==='es'?'Pago completo 100%':'Full payment 100%');
+ document.getElementById('sumMethod').textContent='SumUp';
+ document.getElementById('dueNow').textContent=money(due);document.getElementById('remaining').textContent=money(rem);
+ const submitBtn=document.getElementById('submitBtn');
+ submitBtn.textContent=pl==='advance'?(lang==='es'?'Solicitar enlace SumUp del 20%':'Get 20% SumUp payment link'):(lang==='es'?'Ir al pago seguro':'Proceed to secure payment');
+ document.querySelector('[data-t="clearText"]').textContent=pl==='advance'?(lang==='es'?'Paga ahora el 20% y el 80% restante queda pendiente para el día de la sesión.':'Pay 20% now and the remaining 80% stays due for the photoshoot day.'):(lang==='es'?'El paquete seleccionado se paga completamente mediante el checkout seguro de SumUp.':'Your selected package is paid in full through SumUp secure checkout.');
+ const infos=document.querySelectorAll('.important li');
+ if(infos.length>=4){
+  infos[0].textContent=pl==='advance'?(lang==='es'?'El anticipo del 20% confirma la reserva una vez recibido.':'The 20% advance confirms the booking once received.'):(lang==='es'?'El pago completo online confirma la franja reservada.':'Full online payment confirms the reserved session slot.');
+  infos[1].textContent=pl==='advance'?(lang==='es'?'El enlace exacto de anticipo de SumUp se envía por WhatsApp hasta que se añadan todos los enlaces a la web.':'The exact SumUp advance link is sent on WhatsApp until all advance links are added to the website.'):(lang==='es'?'El pago se completa en el checkout seguro de SumUp.':'Payment is completed on SumUp secure checkout.');
+  infos[2].textContent=lang==='es'?'RN Production no recibe ni almacena los datos de tu tarjeta en esta web.':'RN Production never receives or stores your card details on this website.';
+  infos[3].textContent=pl==='advance'?(lang==='es'?'El 80% restante se paga el día de la sesión.':'The remaining 80% is paid on the photoshoot day.'):(lang==='es'?'No queda ningún pago pendiente el día de la sesión tras completar el pago online.':'No payment remains due at the session after successful full online payment.');
+ }
+ document.getElementById('methodBox').textContent=pl==='advance'?(lang==='es'?'El anticipo del 20% está calculado. Hasta añadir los enlaces de anticipo de SumUp, usa el botón para solicitar el enlace seguro exacto por WhatsApp.':'Your 20% advance is calculated. Until the SumUp advance links are added, use the button to request the exact secure payment link on WhatsApp.'):(lang==='es'?'Serás redirigido al checkout seguro de SumUp para completar el pago con tarjeta.':'You will be redirected to SumUp secure checkout to complete your card payment.');
+ document.querySelectorAll('.plan').forEach(c=>c.classList.toggle('active',c.dataset.plan===pl));
+ document.querySelectorAll('.method').forEach(b=>{b.disabled=false});
+ document.querySelectorAll('.price-row').forEach(r=>r.classList.toggle('active',r.dataset.package===pkgSel.value&&r.dataset.duration===durSel.value));
+ const txt=`RN Production Booking\nName: ${document.getElementById('name').value||'-'}\nDate: ${document.getElementById('date').value||'-'}\nPackage: ${pkgName()}\nDuration: ${opt.duration[lang]}\nPackage total: ${money(t)}\nTax: ${tr[lang].taxIncluded}\nPayment plan: ${document.getElementById('sumPlan').textContent}\nPay now: ${money(due)}\nBalance after payment: ${money(rem)}${pl==='advance'?'\n\nPlease send me the secure SumUp link for this 20% advance.':''}`;
+ document.getElementById('waLink').href='https://wa.me/34666534703?text='+encodeURIComponent(txt);
+}
+function applyLanguage(){
+ document.documentElement.lang=lang;
+ document.querySelectorAll('[data-t]').forEach(e=>{const k=e.dataset.t;if(tr[lang][k])e.textContent=tr[lang][k]});
+ document.querySelectorAll('.lang').forEach(x=>x.classList.toggle('active',x.dataset.lang===lang));
+ const oldPkg=pkgSel.value||'solo',oldDur=durSel.value;renderPackageSelect();pkgSel.value=oldPkg;renderDurationSelect(oldDur);renderTables();update();
+}
+pkgSel.onchange=()=>{renderDurationSelect();update()};durSel.onchange=update;
+document.querySelectorAll('input[name="plan"]').forEach(r=>r.onchange=update);
+['name','date'].forEach(id=>document.getElementById(id).addEventListener('input',update));
+document.querySelectorAll('.lang').forEach(b=>b.onclick=()=>{lang=b.dataset.lang;applyLanguage()});
+document.querySelectorAll('.method').forEach(b=>b.onclick=()=>{method='sumup';document.querySelectorAll('.method').forEach(x=>x.classList.add('active'));update()});
+// RN Production SumUp payment links — full package payment
+const PAYMENT_LINKS={
+  solo_1h_full:'https://pay.sumup.com/b2c/QHHIXK0K',
+  solo_2h_full:'https://pay.sumup.com/b2c/QRTYW9LP',
+  solo_3h_full:'https://pay.sumup.com/b2c/Q9CZTECN',
+  solo_6h_full:'https://pay.sumup.com/b2c/QKTWU5W3',
+  couple_1h_full:'https://pay.sumup.com/b2c/Q179CMU4',
+  couple_2h_full:'https://pay.sumup.com/b2c/QUDYLMXZ',
+  couple_3h_full:'https://pay.sumup.com/b2c/QB0TJN3G',
+  couple_6h_full:'https://pay.sumup.com/b2c/QHO06WR0',
+  group_1h_full:'https://pay.sumup.com/b2c/Q6QFNU9U',
+  group_2h_full:'https://pay.sumup.com/b2c/QUWWZ8WH',
+  group_3h_full:'https://pay.sumup.com/b2c/QEPWFBMI',
+  group_6h_full:'https://pay.sumup.com/b2c/QV2CZ0NF',
+  'quince_1.5h_full':'https://pay.sumup.com/b2c/QQKF6X0O',
+  quince_3h_full:'https://pay.sumup.com/b2c/QD3P0HB7',
+  quince_6h_full:'https://pay.sumup.com/b2c/QGI3J7U4'
+};
+function paymentKey(){return `${pkgSel.value}_${currentOption().id}_${plan()}`}
+
+document.getElementById('payForm').onsubmit=e=>{
+ e.preventDefault();
+ const opt=currentOption(),t=opt.price,pl=plan(),due=pl==='advance'?t*.20:t;
+ const status=document.getElementById('paymentStatus');
+ if(pl==='advance'){
+   status.style.display='none';
+   window.open(document.getElementById('waLink').href,'_blank');
+   return;
+ }
+ const key=paymentKey();
+ const url=PAYMENT_LINKS[key];
+ if(url){
+   status.style.display='none';
+   window.location.assign(url);
+   return;
+ }
+ status.style.display='block';
+ status.textContent=lang==='es'
+   ? `No se encontró el enlace de pago de SumUp para ${pkgName()} — ${opt.duration[lang]}. Contacta con RN Production por WhatsApp.`
+   : `The SumUp payment link for ${pkgName()} — ${opt.duration[lang]} is not available. Please contact RN Production on WhatsApp.`;
+ status.scrollIntoView({behavior:'smooth',block:'nearest'});
+};
+renderPackageSelect();renderTables();update();
 </script>
 </body>
 </html>
