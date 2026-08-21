@@ -222,10 +222,92 @@ footer{background:#060708;border-top:1px solid rgba(224,161,118,.16)}.footer-lis
   .brand .mark,.brand .mark::after,.brand strong{animation:none !important}
 }
 
+
+
+/* === RN Production custom photographer logo === */
+.logo-brand{
+  position:relative;
+  width:238px;
+  height:76px;
+  flex:0 0 238px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  border-radius:14px;
+  isolation:isolate;
+  padding:3px 5px;
+  background:#070809;
+  border:1px solid rgba(225,161,118,.20);
+  box-shadow:0 0 0 1px rgba(255,255,255,.015),0 0 20px rgba(201,117,69,.13);
+  animation:rnLogoGlow 3.8s ease-in-out infinite;
+}
+.logo-brand img{
+  display:block;
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  position:relative;
+  z-index:1;
+  filter:contrast(1.04) brightness(1.04) drop-shadow(0 0 4px rgba(255,255,255,.07));
+}
+.logo-brand::before{
+  content:"";
+  position:absolute;
+  inset:5px;
+  border-radius:10px;
+  pointer-events:none;
+  z-index:2;
+  border:1px solid rgba(225,161,118,.10);
+}
+.logo-brand::after{
+  content:"";
+  position:absolute;
+  z-index:3;
+  top:-40%;
+  bottom:-40%;
+  width:34px;
+  left:-28%;
+  transform:rotate(18deg);
+  background:linear-gradient(90deg,transparent,rgba(255,220,190,.06),rgba(255,255,255,.78),rgba(225,161,118,.20),transparent);
+  filter:blur(1px);
+  opacity:0;
+  pointer-events:none;
+  animation:rnLogoSweep 4.4s ease-in-out infinite;
+}
+@keyframes rnLogoSweep{
+  0%,18%{left:-28%;opacity:0}
+  27%{opacity:.82}
+  49%{left:112%;opacity:.50}
+  58%,100%{left:112%;opacity:0}
+}
+@keyframes rnLogoGlow{
+  0%,100%{box-shadow:0 0 0 1px rgba(255,255,255,.015),0 0 15px rgba(201,117,69,.10)}
+  50%{box-shadow:0 0 0 1px rgba(225,161,118,.12),0 0 30px rgba(225,161,118,.30)}
+}
+@media(min-width:981px){
+  .nav{height:94px}
+  .hero .inner{padding-top:120px}
+}
+@media(max-width:980px){
+  .logo-brand{width:188px;height:68px;flex:0 0 188px;border-radius:12px;padding:2px 4px}
+}
+@media(max-width:640px){
+  .logo-brand{width:172px;height:62px;flex:0 0 172px;border-radius:11px}
+  .logo-brand::before{inset:3px;border-radius:8px}
+  .nav{height:76px}
+}
+@media(max-width:380px){
+  .logo-brand{width:158px;height:58px;flex-basis:158px}
+}
+@media (prefers-reduced-motion: reduce){
+  .logo-brand,.logo-brand::after{animation:none !important}
+}
+
 </style>
 </head>
 <body>
-<header class="header"><div class="container nav"><a class="brand" href="#home"><span class="mark">RN</span><span><strong>RN Production</strong><small>Films & Photography</small></span></a><nav class="links" id="links"><a href="#services" data-t="navServices">Services</a><a href="#portfolio" data-t="navPortfolio">Portfolio</a><a href="#locations" data-t="navLocations">Locations</a><a href="#about" data-t="navAbout">About</a><a href="#contact" data-t="navContact">Contact</a><a href="client.html" data-t="navClient">Client Access</a><a href="payment.html" data-t="navPay">Book & Pay</a></nav><div class="actions"><div class="langs"><button class="lang active" data-lang="en">EN</button><button class="lang" data-lang="es">ES</button></div><a class="btn" href="payment.html" data-t="bookNow">Book & Pay</a><button class="menu" id="menu">☰</button></div><a class="mobile-paybar" href="payment.html" data-t="bookNow">Book & Pay</a></div></header>
+<header class="header"><div class="container nav"><a class="brand logo-brand" href="#home" aria-label="RN Production home"><img src="rn-production-logo-header.jpg" alt="RN Production Films & Photography +34 666 53 47 03"></a><nav class="links" id="links"><a href="#services" data-t="navServices">Services</a><a href="#portfolio" data-t="navPortfolio">Portfolio</a><a href="#locations" data-t="navLocations">Locations</a><a href="#about" data-t="navAbout">About</a><a href="#contact" data-t="navContact">Contact</a><a href="client.html" data-t="navClient">Client Access</a><a href="payment.html" data-t="navPay">Book & Pay</a></nav><div class="actions"><div class="langs"><button class="lang active" data-lang="en">EN</button><button class="lang" data-lang="es">ES</button></div><a class="btn" href="payment.html" data-t="bookNow">Book & Pay</a><button class="menu" id="menu">☰</button></div><a class="mobile-paybar" href="payment.html" data-t="bookNow">Book & Pay</a></div></header>
 <section class="hero" id="home"><div class="container inner"><div class="eyebrow" data-t="heroEyebrow">Barcelona • Photography • Film</div><h1 data-t="heroTitle">Your Barcelona story, captured beautifully.</h1><p data-t="heroText">Professional street sessions, travel photography, special events and cinematic video production across Barcelona.</p><div class="hero-actions"><a class="btn" href="https://wa.me/34666534703" target="_blank" data-t="whatsappBooking">Book on WhatsApp</a><a class="btn ghost" href="#portfolio" data-t="viewWork">View our work</a></div><div class="pills"><span data-t="pill1">Solo • Couples • Families</span><span data-t="pill2">Quinceañeras & Events</span><span data-t="pill3">Tourist • Couple • Quinceañera</span></div></div></section>
 <div class="strip"><div class="container stats"><div><strong>Barcelona</strong><span data-t="stat1">Based in the city</span></div><div><strong>Photo + Film</strong><span data-t="stat2">Creative coverage</span></div><div><strong>Flexible</strong><span data-t="stat3">Travel & event sessions</span></div><div><strong>Fast contact</strong><span data-t="stat4">WhatsApp booking</span></div></div></div>
 <section class="section" id="services"><div class="container"><div class="heading"><div><span class="kicker" data-t="servicesKicker">What we do</span><h2 data-t="servicesTitle">Photography and film with a personal touch.</h2></div><p data-t="servicesLead">From relaxed Barcelona street sessions to special events and polished post-production.</p></div><div class="cards"><article class="card"><div class="card-media"><div class="num">01</div><img src="tourist1.jpg" alt="Tourist photography in Barcelona"></div><h3 data-t="s1t">Travel & Street Photography</h3><p data-t="s1p">Professional tourist, solo, couple and family portraits with natural poses and beautiful Barcelona backdrops.</p><span class="tag" data-t="s1g">Portraits • Lifestyle • Travel</span></article><article class="card"><div class="card-media"><div class="num">02</div><img src="quince1.jpg" alt="Quinceañera and events photography"></div><h3 data-t="s2t">Event Videography & Films</h3><p data-t="s2p">Creative photo and video coverage for quinceañeras, celebrations, couple stories and special occasions.</p><span class="tag" data-t="s2g">Events • Reels • Films</span></article><article class="card"><div class="card-media"><div class="num">03</div><img src="couple2.jpg" alt="Edited couple portrait in Barcelona"></div><h3 data-t="s3t">Post-Production</h3><p data-t="s3p">Professional photo retouching, video editing and graphic design for a clean, finished look.</p><span class="tag" data-t="s3g">Retouching • Editing • Design</span></article></div></div></section>
