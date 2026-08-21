@@ -44,7 +44,7 @@ body{background:radial-gradient(circle at 75% 0%,#23170f 0,transparent 31%),var(
 <header class="top"><div class="wrap nav"><a class="brand" href="index.html"><span class="mark">RN</span><span><strong>RN Production</strong><small>FILMS & PHOTOGRAPHY</small></span></a><div class="right"><div class="langs"><button class="lang active" data-lang="en">EN</button><button class="lang" data-lang="es">ES</button></div><a class="back" href="index.html">← <span data-t="back">Back to website</span></a></div></div></header>
 
 <main class="wrap">
-<section class="hero"><span class="eyebrow" data-t="eyebrow">Barcelona booking</span><h1 data-t="title">Choose your photoshoot package.</h1><p data-t="lead">Select a package, date and payment option. Your booking amount is calculated automatically.</p><div class="rulebox"><strong data-t="ruleTitle">Booking payment rule</strong><span data-t="ruleText">Pay 100% online through SumUp secure checkout to confirm your selected session.</span></div><div class="vat-note"><b>✓</b><div><strong data-t="vatTitle">21% VAT included</strong><span data-t="vatText">All prices shown on this booking page already include 21% VAT. No additional VAT will be added at checkout.</span></div></div></section>
+<section class="hero"><span class="eyebrow" data-t="eyebrow">Barcelona booking</span><h1 data-t="title">Choose your photoshoot package.</h1><p data-t="lead">Select a package, date and payment option. Your booking amount is calculated automatically.</p><div class="rulebox"><strong data-t="ruleTitle">Booking payment rule</strong><span data-t="ruleText">Choose 20% advance or 100% full payment. The amount is calculated automatically.</span></div><div class="vat-note"><b>✓</b><div><strong data-t="vatTitle">21% VAT included</strong><span data-t="vatText">All prices shown on this booking page already include 21% VAT. No additional VAT will be added at checkout.</span></div></div></section>
 
 <h2 class="section-title" data-t="priceTitle">Packages & prices</h2>
 <section class="price-tables" id="priceTables"></section><div class="selection-note" data-t="selectHint">Tap a row to select that package and duration for booking.</div>
@@ -59,7 +59,8 @@ body{background:radial-gradient(circle at 75% 0%,#23170f 0,transparent 31%),var(
 
 <h3 data-t="payPlan">Online payment</h3>
 <div class="plans">
-<label class="plan active" data-plan="full"><input type="radio" name="plan" value="full" checked><span><strong data-t="fullTitle">Pay 100% securely online</strong><small data-t="fullText">Pay the full package amount now through SumUp secure checkout.</small></span></label>
+<label class="plan active" data-plan="advance"><input type="radio" name="plan" value="advance" checked><span><strong data-t="advanceTitle">Pay 20% advance now</strong><small data-t="advanceText">Reserve your session with a 20% advance. The remaining 80% is paid at the photoshoot.</small></span></label>
+<label class="plan" data-plan="full"><input type="radio" name="plan" value="full"><span><strong data-t="fullTitle">Pay 100% securely online</strong><small data-t="fullText">Pay the full package amount now through SumUp secure checkout.</small></span></label>
 </div>
 
 <h3 class="method-title" data-t="methodTitle">Payment method</h3>
@@ -97,12 +98,12 @@ const packageData={
   {id:'6h',duration:{en:'6 Hours (Full Day)',es:'6 horas (día completo)'},price:600,services:{en:'130+ High-Res Photos, Full Outfit Coverage, Cinematic Reel',es:'130+ fotos en alta resolución, cobertura completa de vestuario, reel cinematográfico'}}]}
 };
 const tr={
- en:{back:'Back to website',eyebrow:'Barcelona booking',title:'Choose your photoshoot package.',lead:'Select a package, duration, date and payment option. Your booking amount is calculated automatically.',ruleTitle:'Booking payment rule',ruleText:'Pay 100% online through SumUp secure checkout to confirm your selected session.',vatTitle:'21% VAT included',vatText:'All prices shown on this booking page already include 21% VAT. No additional VAT will be added at checkout.',priceTitle:'Packages & prices',selectHint:'Tap a row to select that package and duration for booking.',bookingTitle:'Book your session',name:'Your name',email:'Email',date:'Session date',package:'Package',durationLabel:'Duration / option',note:'Booking note',payPlan:'Online payment',advanceTitle:'Pay 20% advance now',advanceText:'Your session is reserved with a 20% advance. Pay the remaining 80% at the photoshoot location.',fullTitle:'Pay 100% securely online',fullText:'Pay the full package amount now through SumUp secure checkout.',methodTitle:'Payment method',sumup:'SumUp Secure Payment',cardBrands:'Visa • Mastercard',sumupNote:'You will be redirected to SumUp secure checkout to complete your card payment.',continue:'Proceed to secure payment',wa:'Or confirm this booking on WhatsApp',summary:'Booking summary',sumPackage:'Package',sumDuration:'Duration',sumTotal:'Package total',sumTax:'Tax',taxIncluded:'21% VAT included',sumPlan:'Payment plan',sumMethod:'Method',dueNow:'Pay now',remaining:'Balance after payment',clear:'Clear payment terms',clearText:'Your selected package is paid in full through SumUp secure checkout.',important:'Important booking information',info1:'Full online payment confirms the reserved session slot.',info2:'Payment is completed on SumUp secure checkout.',info3:'RN Production never receives or stores your card details on this website.',info4:'No payment remains due at the session after successful full online payment.',durationHead:'Duration',priceHead:'Price (inc. VAT)',servicesHead:'Included services',vatBadge:'21% VAT included'},
- es:{back:'Volver a la web',eyebrow:'Reservas Barcelona',title:'Elige tu paquete de fotos.',lead:'Selecciona paquete, duración, fecha y forma de pago. El importe se calcula automáticamente.',ruleTitle:'Regla de pago de la reserva',ruleText:'Paga el 100% online mediante el checkout seguro de SumUp para confirmar la sesión seleccionada.',vatTitle:'21% IVA incluido',vatText:'Todos los precios mostrados en esta página ya incluyen el 21% de IVA. No se añadirá IVA adicional.',priceTitle:'Paquetes y precios',selectHint:'Toca una fila para seleccionar ese paquete y duración para la reserva.',bookingTitle:'Reserva tu sesión',name:'Tu nombre',email:'Correo electrónico',date:'Fecha de la sesión',package:'Paquete',durationLabel:'Duración / opción',note:'Nota de reserva',payPlan:'Pago online',advanceTitle:'Pagar 20% ahora',advanceText:'La sesión queda reservada con un anticipo del 20%. El 80% restante se paga en el lugar de la sesión.',fullTitle:'Pagar 100% online de forma segura',fullText:'Paga el importe completo ahora mediante el checkout seguro de SumUp.',methodTitle:'Método de pago',sumup:'Pago seguro con SumUp',cardBrands:'Visa • Mastercard',sumupNote:'Serás redirigido al checkout seguro de SumUp para completar el pago con tarjeta.',continue:'Ir al pago seguro',wa:'O confirma esta reserva por WhatsApp',summary:'Resumen de reserva',sumPackage:'Paquete',sumDuration:'Duración',sumTotal:'Total del paquete',sumTax:'Impuestos',taxIncluded:'21% IVA incluido',sumPlan:'Plan de pago',sumMethod:'Método',dueNow:'Pagar ahora',remaining:'Saldo después del pago',clear:'Condiciones claras',clearText:'El paquete seleccionado se paga completamente mediante el checkout seguro de SumUp.',important:'Información importante',info1:'El pago completo online confirma la franja reservada.',info2:'El pago se completa en el checkout seguro de SumUp.',info3:'RN Production no recibe ni almacena los datos de tu tarjeta en esta web.',info4:'No queda ningún pago pendiente el día de la sesión tras completar el pago online.',durationHead:'Duración',priceHead:'Precio (IVA incl.)',servicesHead:'Servicios incluidos',vatBadge:'21% IVA incluido'}
+ en:{back:'Back to website',eyebrow:'Barcelona booking',title:'Choose your photoshoot package.',lead:'Select a package, duration, date and payment option. Your booking amount is calculated automatically.',ruleTitle:'Booking payment rule',ruleText:'Choose 20% advance or 100% full payment. The amount is calculated automatically.',vatTitle:'21% VAT included',vatText:'All prices shown on this booking page already include 21% VAT. No additional VAT will be added at checkout.',priceTitle:'Packages & prices',selectHint:'Tap a row to select that package and duration for booking.',bookingTitle:'Book your session',name:'Your name',email:'Email',date:'Session date',package:'Package',durationLabel:'Duration / option',note:'Booking note',payPlan:'Online payment',advanceTitle:'Pay 20% advance now',advanceText:'Reserve your session with a 20% advance. The remaining 80% is paid at the photoshoot.',fullTitle:'Pay 100% securely online',fullText:'Pay the full package amount now through SumUp secure checkout.',methodTitle:'Payment method',sumup:'SumUp Secure Payment',cardBrands:'Visa • Mastercard',sumupNote:'You will be redirected to SumUp secure checkout to complete your card payment.',continue:'Proceed to secure payment',wa:'Or confirm this booking on WhatsApp',summary:'Booking summary',sumPackage:'Package',sumDuration:'Duration',sumTotal:'Package total',sumTax:'Tax',taxIncluded:'21% VAT included',sumPlan:'Payment plan',sumMethod:'Method',dueNow:'Pay now',remaining:'Balance after payment',clear:'Clear payment terms',clearText:'Your selected package is paid in full through SumUp secure checkout.',important:'Important booking information',info1:'Full online payment confirms the reserved session slot.',info2:'Payment is completed on SumUp secure checkout.',info3:'RN Production never receives or stores your card details on this website.',info4:'No payment remains due at the session after successful full online payment.',durationHead:'Duration',priceHead:'Price (inc. VAT)',servicesHead:'Included services',vatBadge:'21% VAT included'},
+ es:{back:'Volver a la web',eyebrow:'Reservas Barcelona',title:'Elige tu paquete de fotos.',lead:'Selecciona paquete, duración, fecha y forma de pago. El importe se calcula automáticamente.',ruleTitle:'Regla de pago de la reserva',ruleText:'Elige anticipo del 20% o pago completo del 100%. El importe se calcula automáticamente.',vatTitle:'21% IVA incluido',vatText:'Todos los precios mostrados en esta página ya incluyen el 21% de IVA. No se añadirá IVA adicional.',priceTitle:'Paquetes y precios',selectHint:'Toca una fila para seleccionar ese paquete y duración para la reserva.',bookingTitle:'Reserva tu sesión',name:'Tu nombre',email:'Correo electrónico',date:'Fecha de la sesión',package:'Paquete',durationLabel:'Duración / opción',note:'Nota de reserva',payPlan:'Pago online',advanceTitle:'Pagar 20% ahora',advanceText:'Reserva la sesión con un anticipo del 20%. El 80% restante se paga el día de la sesión.',fullTitle:'Pagar 100% online de forma segura',fullText:'Paga el importe completo ahora mediante el checkout seguro de SumUp.',methodTitle:'Método de pago',sumup:'Pago seguro con SumUp',cardBrands:'Visa • Mastercard',sumupNote:'Serás redirigido al checkout seguro de SumUp para completar el pago con tarjeta.',continue:'Ir al pago seguro',wa:'O confirma esta reserva por WhatsApp',summary:'Resumen de reserva',sumPackage:'Paquete',sumDuration:'Duración',sumTotal:'Total del paquete',sumTax:'Impuestos',taxIncluded:'21% IVA incluido',sumPlan:'Plan de pago',sumMethod:'Método',dueNow:'Pagar ahora',remaining:'Saldo después del pago',clear:'Condiciones claras',clearText:'El paquete seleccionado se paga completamente mediante el checkout seguro de SumUp.',important:'Información importante',info1:'El pago completo online confirma la franja reservada.',info2:'El pago se completa en el checkout seguro de SumUp.',info3:'RN Production no recibe ni almacena los datos de tu tarjeta en esta web.',info4:'No queda ningún pago pendiente el día de la sesión tras completar el pago online.',durationHead:'Duración',priceHead:'Precio (IVA incl.)',servicesHead:'Servicios incluidos',vatBadge:'21% IVA incluido'}
 };
 let lang='en',method='sumup';
 const pkgSel=document.getElementById('package'),durSel=document.getElementById('duration');
-function plan(){return 'full'}
+function plan(){const r=document.querySelector('input[name="plan"]:checked');return r?r.value:'advance'}
 function money(v){return '€'+Number(v).toFixed(2)}
 function currentPkg(){return packageData[pkgSel.value]}
 function currentOption(){return currentPkg().options.find(o=>o.id===durSel.value)||currentPkg().options[0]}
@@ -128,18 +129,28 @@ function renderTables(){
 }
 function update(){
  const opt=currentOption(),t=opt.price,pl=plan();
- const due=t,rem=0;
+ const due=pl==='advance'?t*.20:t,rem=pl==='advance'?t*.80:0;
  document.getElementById('sumPackage').textContent=pkgName();
  document.getElementById('sumDuration').textContent=opt.duration[lang];
  document.getElementById('sumTotal').textContent=money(t);
- document.getElementById('sumPlan').textContent=lang==='es'?'Pago completo 100%':'Full payment 100%';
+ document.getElementById('sumPlan').textContent=pl==='advance'?(lang==='es'?'Anticipo 20%':'20% advance'):(lang==='es'?'Pago completo 100%':'Full payment 100%');
  document.getElementById('sumMethod').textContent='SumUp';
  document.getElementById('dueNow').textContent=money(due);document.getElementById('remaining').textContent=money(rem);
- document.getElementById('methodBox').textContent=lang==='es'?'Serás redirigido al checkout seguro de SumUp para completar el pago con tarjeta.':'You will be redirected to SumUp secure checkout to complete your card payment.';
+ const submitBtn=document.getElementById('submitBtn');
+ submitBtn.textContent=pl==='advance'?(lang==='es'?'Solicitar enlace SumUp del 20%':'Get 20% SumUp payment link'):(lang==='es'?'Ir al pago seguro':'Proceed to secure payment');
+ document.querySelector('[data-t="clearText"]').textContent=pl==='advance'?(lang==='es'?'Paga ahora el 20% y el 80% restante queda pendiente para el día de la sesión.':'Pay 20% now and the remaining 80% stays due for the photoshoot day.'):(lang==='es'?'El paquete seleccionado se paga completamente mediante el checkout seguro de SumUp.':'Your selected package is paid in full through SumUp secure checkout.');
+ const infos=document.querySelectorAll('.important li');
+ if(infos.length>=4){
+  infos[0].textContent=pl==='advance'?(lang==='es'?'El anticipo del 20% confirma la reserva una vez recibido.':'The 20% advance confirms the booking once received.'):(lang==='es'?'El pago completo online confirma la franja reservada.':'Full online payment confirms the reserved session slot.');
+  infos[1].textContent=pl==='advance'?(lang==='es'?'El enlace exacto de anticipo de SumUp se envía por WhatsApp hasta que se añadan todos los enlaces a la web.':'The exact SumUp advance link is sent on WhatsApp until all advance links are added to the website.'):(lang==='es'?'El pago se completa en el checkout seguro de SumUp.':'Payment is completed on SumUp secure checkout.');
+  infos[2].textContent=lang==='es'?'RN Production no recibe ni almacena los datos de tu tarjeta en esta web.':'RN Production never receives or stores your card details on this website.';
+  infos[3].textContent=pl==='advance'?(lang==='es'?'El 80% restante se paga el día de la sesión.':'The remaining 80% is paid on the photoshoot day.'):(lang==='es'?'No queda ningún pago pendiente el día de la sesión tras completar el pago online.':'No payment remains due at the session after successful full online payment.');
+ }
+ document.getElementById('methodBox').textContent=pl==='advance'?(lang==='es'?'El anticipo del 20% está calculado. Hasta añadir los enlaces de anticipo de SumUp, usa el botón para solicitar el enlace seguro exacto por WhatsApp.':'Your 20% advance is calculated. Until the SumUp advance links are added, use the button to request the exact secure payment link on WhatsApp.'):(lang==='es'?'Serás redirigido al checkout seguro de SumUp para completar el pago con tarjeta.':'You will be redirected to SumUp secure checkout to complete your card payment.');
  document.querySelectorAll('.plan').forEach(c=>c.classList.toggle('active',c.dataset.plan===pl));
  document.querySelectorAll('.method').forEach(b=>{b.disabled=false});
  document.querySelectorAll('.price-row').forEach(r=>r.classList.toggle('active',r.dataset.package===pkgSel.value&&r.dataset.duration===durSel.value));
- const txt=`RN Production Booking\nName: ${document.getElementById('name').value||'-'}\nDate: ${document.getElementById('date').value||'-'}\nPackage: ${pkgName()}\nDuration: ${opt.duration[lang]}\nPackage total: ${money(t)}\nTax: ${tr[lang].taxIncluded}\nPayment plan: ${document.getElementById('sumPlan').textContent}\nPay now: ${money(due)}\nBalance after payment: ${money(rem)}`;
+ const txt=`RN Production Booking\nName: ${document.getElementById('name').value||'-'}\nDate: ${document.getElementById('date').value||'-'}\nPackage: ${pkgName()}\nDuration: ${opt.duration[lang]}\nPackage total: ${money(t)}\nTax: ${tr[lang].taxIncluded}\nPayment plan: ${document.getElementById('sumPlan').textContent}\nPay now: ${money(due)}\nBalance after payment: ${money(rem)}${pl==='advance'?'\n\nPlease send me the secure SumUp link for this 20% advance.':''}`;
  document.getElementById('waLink').href='https://wa.me/34666534703?text='+encodeURIComponent(txt);
 }
 function applyLanguage(){
@@ -171,14 +182,19 @@ const PAYMENT_LINKS={
   quince_3h_full:'https://pay.sumup.com/b2c/QD3P0HB7',
   quince_6h_full:'https://pay.sumup.com/b2c/QGI3J7U4'
 };
-function paymentKey(){return `${pkgSel.value}_${currentOption().id}_full`}
+function paymentKey(){return `${pkgSel.value}_${currentOption().id}_${plan()}`}
 
 document.getElementById('payForm').onsubmit=e=>{
  e.preventDefault();
- const opt=currentOption(),t=opt.price,due=t;
+ const opt=currentOption(),t=opt.price,pl=plan(),due=pl==='advance'?t*.20:t;
+ const status=document.getElementById('paymentStatus');
+ if(pl==='advance'){
+   status.style.display='none';
+   window.open(document.getElementById('waLink').href,'_blank');
+   return;
+ }
  const key=paymentKey();
  const url=PAYMENT_LINKS[key];
- const status=document.getElementById('paymentStatus');
  if(url){
    status.style.display='none';
    window.location.assign(url);
